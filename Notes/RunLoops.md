@@ -1,19 +1,13 @@
 # Run Loops
 > [原文链接：Run Loops](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16-SW1)
 
-Run loops are part of the fundamental infrastructure associated with threads. A run loop is an event processing loop that you use to schedule work and coordinate the receipt of incoming events. The purpose of a run loop is to keep your thread busy when there is work to do and put your thread to sleep when there is none.
+运行循环是基础架构的其中一部分，它与线程是一一对应。运行循环是一种事件处理循环，可用于安排工作和协调接受即将到来的事件。运行循环目的是让线程在有工作的时候忙碌，而在没有工作的时候睡眠。
 
-运行循环是与线程关联的基础架构的一部分。运行循环是事件处理循环，可用于安排工作并协调收到的事件的接收。运行循环的目的是在有工作要做时让线程忙，而在没有工作时让线程进入睡眠状态。
+运行循环管理不是完全自动的。你必须设计线程代码以在适当的时间启动运行循环并响应传入的事件。Cocoa和Core Foundation都提供了运行循环对象，以帮助您配置和管理线程的运行循环。你的应用程序不需要显式创建这些对象。每个线程（包括应用程序的主线程）都有一个关联的运行循环对象。只有子线程才需要显式地运行其运行循环。在应用程序启动过程中，应用程序框架会自动在主线程上设置并运行运行循环。
 
-Run loop management is not entirely automatic. You must still design your thread’s code to start the run loop at appropriate times and respond to incoming events. Both Cocoa and Core Foundation provide run loop objects to help you configure and manage your thread’s run loop. Your application does not need to create these objects explicitly; each thread, including the application’s main thread, has an associated run loop object. Only secondary threads need to run their run loop explicitly, however. The app frameworks automatically set up and run the run loop on the main thread as part of the application startup process.
+接下来的章节将会提供有关运行循环以及如何为应用程序配置循环的更多信息。有关运行循环对象的其他信息，请参考[NSRunLoop类参考](https://developer.apple.com/documentation/foundation/nsrunloop)和[CFRunLoop参考](https://developer.apple.com/documentation/corefoundation/cfrunloop)。
 
-运行循环管理不是完全自动的。您仍然必须设计线程的代码以在适当的时间启动运行循环并响应传入的事件。Cocoa和Core Foundation都提供了运行循环对象，以帮助您配置和管理线程的运行循环。你的应用程序不需要显式创建这些对象。每个线程（包括应用程序的主线程）都有一个关联的运行循环对象。但是，只有子线程需要显式地运行其运行循环。在应用程序启动过程中，应用程序框架会自动在主线程上设置并运行运行循环。
-
-The following sections provide more information about run loops and how you configure them for your application. For additional information about run loop objects, see NSRunLoop Class Reference and CFRunLoop Reference.
-
-以下各节提供有关运行循环以及如何为应用程序配置循环的更多信息。有关运行循环对象的其他信息，请参见《NSRunLoop类参考》和《CFRunLoop参考》。
-
-## Anatomy of a Run Loop
+## 剖析 Run Loop
 A run loop is very much like its name sounds. It is a loop your thread enters and uses to run event handlers in response to incoming events. Your code provides the control statements used to implement the actual loop portion of the run loop—in other words, your code provides the while or for loop that drives the run loop. Within your loop, you use a run loop object to "run” the event-processing code that receives events and calls the installed handlers.
 
 A run loop receives events from two different types of sources. Input sources deliver asynchronous events, usually messages from another thread or from a different application. Timer sources deliver synchronous events, occurring at a scheduled time or repeating interval. Both types of source use an application-specific handler routine to process the event when it arrives.
@@ -28,7 +22,7 @@ Figure 3-1 shows the conceptual structure of a run loop and a variety of sources
 
 **Figure 3-1**  Structure of a run loop and its sources
 
-![](imgs/runloop.jpg)
+![](/imgs/runloop.jpg)
 
 In addition to handling sources of input, run loops also generate notifications about the run loop’s behavior. Registered run-loop observers can receive these notifications and use them to do additional processing on the thread. You use Core Foundation to install run-loop observers on your threads.
 
@@ -466,7 +460,7 @@ Figure 3-2 shows a sample configuration of a custom input source. In this exampl
 
 **Figure 3-2**  Operating a custom input source
 
-![](imgs/custominputsource.jpg)
+![](/imgs/custominputsource.jpg)
 
 The following sections explain the implementation of the custom input source from the preceding figure and show the key code you would need to implement.
 
