@@ -1,0 +1,1 @@
+- [x] [如何防止客户端被破解](http://tanqisen.github.io/blog/2014/06/06/how-to-prevent-app-crack/)
