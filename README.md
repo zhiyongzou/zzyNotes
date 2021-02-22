@@ -1,9 +1,8 @@
-| Category 	| Article 	|
+## iOS
+
+| Category 	| Notes 	|
 |-	|-	|
-| iOS 	| 1. [iOS内存管理](/Notes/iOS内存管理.md)<br> 2. [类与元类](/Notes/ClassesAndMetaclasses.md) |
-| Shell 	|  	|
-| Curl 	|  	|
-| Markdown 	|  	|
-| Basis of Computer Engineering 	|  	|
-| Computer Networks 	|  	|
+| 内存管理 	| 1. [iOS内存管理](/Notes/iOS内存管理.md)  |
+| OC 	| 1. [类与元类](/Notes/ClassesAndMetaclasses.md) 	|
+| Swift 	|  	|
 | Others 	|  	|
