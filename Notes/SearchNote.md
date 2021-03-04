@@ -29,3 +29,4 @@
 26. [SSH 教程](https://wangdoc.com/ssh/index.html)
 27. [一款可让大型iOS工程编译速度提升50%的工具](https://mp.weixin.qq.com/s/uBpkelG8q_xmskWPYyWONA)
 28. [在线教室 iOS 端声音问题综合解决方案](https://mp.weixin.qq.com/s/yFNb0zvPtEjHAtED7-jT0w)
+29. [sed, a stream editor](http://www.gnu.org/software/sed/manual/sed.html)
