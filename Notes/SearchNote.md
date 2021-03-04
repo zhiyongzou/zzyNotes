@@ -31,3 +31,4 @@
 28. [在线教室 iOS 端声音问题综合解决方案](https://mp.weixin.qq.com/s/yFNb0zvPtEjHAtED7-jT0w)
 29. [sed, a stream editor](http://www.gnu.org/software/sed/manual/sed.html)
 30. [In-place edits with sed on OS X](https://stackoverflow.com/questions/7573368/in-place-edits-with-sed-on-os-x)
+31. [SED 简明教程](https://coolshell.cn/articles/9104.html#sed%E7%9A%84%E5%91%BD%E4%BB%A4)
