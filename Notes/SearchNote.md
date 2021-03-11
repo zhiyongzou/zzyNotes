@@ -34,3 +34,4 @@
 31. [SED 简明教程](https://coolshell.cn/articles/9104.html#sed%E7%9A%84%E5%91%BD%E4%BB%A4)
 32. [常用 Git 命令清单](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 33. [How to get the current branch name in Git?](https://stackoverflow.com/questions/6245570/how-to-get-the-current-branch-name-in-git)
+34. [零基础入门：实时音视频技术基础知识全面盘点](https://segmentfault.com/a/1190000023362309)
