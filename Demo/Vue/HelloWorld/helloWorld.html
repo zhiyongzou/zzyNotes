@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" v-model="name" placeholder="Your name">
+        <h1>你好，{{ name }}</h1>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script>
+        var app = new Vue (
+            {
+                el: '#app',
+                data: {
+                    name: ''
+                }
+            }
+        )
+    </script>
+
+</body>
+</html>

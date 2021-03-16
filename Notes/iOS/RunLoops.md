@@ -22,7 +22,7 @@ Figure 3-1 shows the conceptual structure of a run loop and a variety of sources
 
 **Figure 3-1**  Structure of a run loop and its sources
 
-![](/imgs/runloop.jpg)
+![](../imgs/runloop.jpg)
 
 In addition to handling sources of input, run loops also generate notifications about the run loop’s behavior. Registered run-loop observers can receive these notifications and use them to do additional processing on the thread. You use Core Foundation to install run-loop observers on your threads.
 
@@ -460,7 +460,7 @@ Figure 3-2 shows a sample configuration of a custom input source. In this exampl
 
 **Figure 3-2**  Operating a custom input source
 
-![](/imgs/custominputsource.jpg)
+![](../imgs/custominputsource.jpg)
 
 The following sections explain the implementation of the custom input source from the preceding figure and show the key code you would need to implement.
 

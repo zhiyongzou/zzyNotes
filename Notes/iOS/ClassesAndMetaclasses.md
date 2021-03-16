@@ -20,6 +20,6 @@ Objective-C是一个基于类的对象系统。每个对象都是某个类的实
 
 > 实例、类、元类以及他们父类之间的关系图
 
-<img src="./imgs/class diagram.jpg">
+<img src="../imgs/class diagram.jpg">
 
 在真正的计算机科学语言理论中，类和元类的层次结构可以更加自由，并且具有更深的元类链和可以从任何元类实例化出多个类。`Objective-C`使用元类来实现类方法等实际目标，但是往往会隐藏元类。例如，`[NSObject class]`跟`[NSObject self]`是一样的，即使从形式上讲，它也应返回`NSObject->isa`指向的元类 。`Objective-C`语言其实是一套适用的折中方案；在这里，meta 让它变得更好，同时它也限制了类的模式。
