@@ -1,17 +1,17 @@
 //
-//  HelloWorldTests.m
-//  HelloWorldTests
+//  CommonTestTests.m
+//  CommonTestTests
 //
-//  Created by zzyong on 2021/3/16.
+//  Created by zzyong on 2021/3/17.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface HelloWorldTests : XCTestCase
+@interface CommonTestTests : XCTestCase
 
 @end
 
-@implementation HelloWorldTests
+@implementation CommonTestTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
