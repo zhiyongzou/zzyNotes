@@ -8,6 +8,7 @@
 #import "VCModel.h"
 #import "ViewController+DataSource.h"
 #import "DeallocTestVC.h"
+#import "ConvertRectVC.h"
 
 @implementation ViewController (DataSource)
 
@@ -19,7 +20,13 @@
         return [DeallocTestVC new];
     };
     
-    self.testList = @[deallocTest];
+    VCModel *convertRectTest = [VCModel new];
+    convertRectTest.title = @"Convert Rect Test";
+    convertRectTest.targetVC = ^UIViewController * _Nonnull{
+        return [ConvertRectVC new];
+    };
+    
+    self.testList = @[deallocTest, convertRectTest];
 }
 
 @end

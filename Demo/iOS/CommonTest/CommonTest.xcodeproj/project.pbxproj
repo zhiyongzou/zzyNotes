@@ -22,6 +22,7 @@
 		816698E22608CC670045B6F1 /* VCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698E12608CC670045B6F1 /* VCCell.m */; };
 		816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698E72608CC880045B6F1 /* ViewController+DataSource.m */; };
 		816698F12608D1270045B6F1 /* DeallocTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698F02608D1270045B6F1 /* DeallocTestVC.m */; };
+		81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		816698E72608CC880045B6F1 /* ViewController+DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+DataSource.m"; sourceTree = "<group>"; };
 		816698EF2608D1270045B6F1 /* DeallocTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeallocTestVC.h; sourceTree = "<group>"; };
 		816698F02608D1270045B6F1 /* DeallocTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeallocTestVC.m; sourceTree = "<group>"; };
+		81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvertRectVC.h; sourceTree = "<group>"; };
+		81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertRectVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				816696C42601F6250045B6F1 /* LayoutFeedbackLoopsVC.m */,
 				816698EF2608D1270045B6F1 /* DeallocTestVC.h */,
 				816698F02608D1270045B6F1 /* DeallocTestVC.m */,
+				81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */,
+				81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */,
 				816696372601E48E0045B6F1 /* ViewController.m in Sources */,
 				816696BE2601E61F0045B6F1 /* CancelPreviousPerformVC.m in Sources */,
 				816696312601E48E0045B6F1 /* AppDelegate.m in Sources */,
