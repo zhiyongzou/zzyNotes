@@ -4,7 +4,7 @@
 
 ### 功能简介
 
-将自己坐标系转换为另一个视图(toView)的坐标系
+将自己的坐标系转换为另一个视图(toView)的坐标系
 
 ```objc
 - (CGRect)convertRect:(CGRect)rect toView:(nullable UIView *)view;
@@ -32,7 +32,7 @@ grayView --> redView --> self.view
 <img src="../imgs/conver_rect.jpg">
 
 #### 代码
-> bounds：自己本身的坐标系 (bounds 的 x, y 一定都等于 0 吗？有兴趣的可以试试 UIScrollView 滑动时的 bounds 值)
+> bounds：自己本身的坐标系 (bounds 的 x, y 一定都等于 0 吗？有兴趣的可以看看 UIScrollView 滑动时的 bounds)
 > 
 > frame：父视图的坐标系
 
