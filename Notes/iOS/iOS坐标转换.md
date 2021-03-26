@@ -32,6 +32,10 @@ grayView --> redView --> self.view
 <img src="../imgs/conver_rect.jpg">
 
 #### 代码
+> bounds：自己本身的坐标系 (bounds 的 x, y 一定都等于 0 吗？有兴趣的可以试试 UIScrollView 滑动时的 bounds 值)
+> 
+> frame：父视图的坐标系
+
 有 4 种方法可以获取到转换后的坐标，具体如下：
 
 ```objc
@@ -60,6 +64,9 @@ grayView --> redView --> self.view
     NSLog(@"self.view convert grayView's bounds from grayView %@", NSStringFromCGRect([self.view convertRect:_grayView.bounds fromView:_grayView]));
 }
 ```
+
+### 推荐
+业务开发中推荐使用 bounds 进行坐标转换，更加简洁明了，不推荐 frame 方式
 
 ### 思考
 转换后的坐标值是多少？
