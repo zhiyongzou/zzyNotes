@@ -23,6 +23,8 @@
 		816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698E72608CC880045B6F1 /* ViewController+DataSource.m */; };
 		816698F12608D1270045B6F1 /* DeallocTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698F02608D1270045B6F1 /* DeallocTestVC.m */; };
 		81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */; };
+		81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3805426134B98001CBFC6 /* AtomicTestVC.m */; };
+		81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D3805526134B98001CBFC6 /* AtomicTestVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,9 @@
 		816698F02608D1270045B6F1 /* DeallocTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeallocTestVC.m; sourceTree = "<group>"; };
 		81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvertRectVC.h; sourceTree = "<group>"; };
 		81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertRectVC.m; sourceTree = "<group>"; };
+		81D3805326134B98001CBFC6 /* AtomicTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicTestVC.h; sourceTree = "<group>"; };
+		81D3805426134B98001CBFC6 /* AtomicTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicTestVC.m; sourceTree = "<group>"; };
+		81D3805526134B98001CBFC6 /* AtomicTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AtomicTestVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +175,9 @@
 				816698F02608D1270045B6F1 /* DeallocTestVC.m */,
 				81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */,
 				81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */,
+				81D3805326134B98001CBFC6 /* AtomicTestVC.h */,
+				81D3805426134B98001CBFC6 /* AtomicTestVC.m */,
+				81D3805526134B98001CBFC6 /* AtomicTestVC.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -306,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */,
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
 				8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */,
@@ -341,6 +350,7 @@
 				816698DC2608CC520045B6F1 /* VCModel.m in Sources */,
 				816698E22608CC670045B6F1 /* VCCell.m in Sources */,
 				816696422601E4900045B6F1 /* main.m in Sources */,
+				81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */,
 				816696342601E48E0045B6F1 /* SceneDelegate.m in Sources */,
 				816696C52601F6250045B6F1 /* LayoutFeedbackLoopsVC.m in Sources */,
 				816698F12608D1270045B6F1 /* DeallocTestVC.m in Sources */,
