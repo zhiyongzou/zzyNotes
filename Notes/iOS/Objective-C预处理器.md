@@ -167,6 +167,6 @@ __unused int Instance(2) = 2;
 
 // 等价于 
 __unused int instance1 = 1;
-__unused int instance2 = 1;
+__unused int instance2 = 2;
 
 ```
