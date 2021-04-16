@@ -55,7 +55,7 @@ Objective-C 预处理器不是编译器的组成部分，它是编译过程中�
 ```
 
 ### #pragma
-设定编译器的状态或者是指示编译器完成一些特定的动作，在日常开发中经常会用到 #pragma mark 划分方法
+设定编译器的状态或者是指示编译器完成一些特定的动作，在日常开发中经常会使用 `#pragma mark` 划分方法
 
 ```objc
 @implementation ImportTest
@@ -74,7 +74,7 @@ Objective-C 预处理器不是编译器的组成部分，它是编译过程中�
 <img src="../imgs/pragma_mark.jpg">
 
 ### #warning
-自定义编译器警告
+自定义编译器警告。一般用于标记一些未完成的功能和测试代码，防止忘记
 
 ```objc
 #warning TODO by zzyong
@@ -118,8 +118,8 @@ Apr 15 2021 21:42:59 main.m 49 main
 ## 预处理器运算符
 Objective-C 预处理器提供了下列的运算符来帮助你创建宏：
 
-### 宏延续运算符`\`
-一个宏通常写在一个单行上。但是如果宏太长，一个单行容纳不下，则使用宏延续运算符
+### `\`运算符
+宏延续运算符， 一个宏通常写在一个单行上。但是如果宏太长，一个单行容纳不下
 
 ```objc
 #define MULTI_LINT_IMP if (idx == 1) {\
@@ -143,6 +143,30 @@ void multiLineDefine(int idx)
 }
 ```
 
-### 字符串常量化运算符`#`
-在宏定义中，当需要把一个宏的参数转换为字符串常量时，则使用字符串常量化运算符
+### `#`运算符
+字符串常量化运算符，将宏的参数转换为字符串常量
 
+```objc
+#define  Hello(name) NSLog(@"Hello, %s", #name)
+
+Hello(zzyong);
+
+// Log
+2021-04-16 11:27:36.822159+0800 PreprocessorTest[88847:8385706] Hello, zzyong
+
+```
+
+### `##` 运算符
+标记粘贴运算符，将宏定义中两个独立的标记被合并为一个标记
+
+```objc
+#define Instance(name) instance##name
+
+__unused int Instance(1) = 1;
+__unused int Instance(2) = 2;
+
+// 等价于 
+__unused int instance1 = 1;
+__unused int instance2 = 1;
+
+```
