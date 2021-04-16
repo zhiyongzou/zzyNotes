@@ -31,6 +31,7 @@
 		8114868826286E5100F1C822 /* ImportTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportTest.m; sourceTree = "<group>"; };
 		8114868B26286E7000F1C822 /* IncludeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncludeTest.h; sourceTree = "<group>"; };
 		8114868C26286E7000F1C822 /* IncludeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IncludeTest.m; sourceTree = "<group>"; };
+		8114868F26292B0500F1C822 /* CommonDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 				8114868826286E5100F1C822 /* ImportTest.m */,
 				8114868B26286E7000F1C822 /* IncludeTest.h */,
 				8114868C26286E7000F1C822 /* IncludeTest.m */,
+				8114868F26292B0500F1C822 /* CommonDefines.h */,
 			);
 			path = PreprocessorTest;
 			sourceTree = "<group>";

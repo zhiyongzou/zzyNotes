@@ -33,7 +33,9 @@
                         }
 
 
-#define  say_hello(a) NSLog(@"#a say hello")
+#define  Hello(name) NSLog(@"Hello, %s", #name)
+
+#define Instance(name) instance##name
 
 void multiLineDefine(int idx);
 
@@ -63,7 +65,10 @@ int main(int argc, const char * argv[]) {
     
     multiLineDefine(1);
     
-    say_hello(zzyong);
+    Hello(zzyong);
+    
+    __unused int Instance(1) = 1;
+    __unused int Instance(2) = 2;
     
     return 0;
 }

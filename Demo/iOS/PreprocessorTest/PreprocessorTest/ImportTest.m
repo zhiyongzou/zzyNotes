@@ -9,6 +9,14 @@
 
 @implementation ImportTest
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.title = @"ImportTest";
+        self.count = 666;
+    }
+    return self;
+}
+
 #pragma mark - Private
 
 #pragma mark - Public
