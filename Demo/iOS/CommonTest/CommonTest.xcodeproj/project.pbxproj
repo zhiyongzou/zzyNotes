@@ -22,6 +22,9 @@
 		816698E22608CC670045B6F1 /* VCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698E12608CC670045B6F1 /* VCCell.m */; };
 		816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698E72608CC880045B6F1 /* ViewController+DataSource.m */; };
 		816698F12608D1270045B6F1 /* DeallocTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698F02608D1270045B6F1 /* DeallocTestVC.m */; };
+		818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */; };
+		818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */; };
+		818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171C42627467400D0A7C8 /* UIBlockObserver.m */; };
 		81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */; };
 		81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3805426134B98001CBFC6 /* AtomicTestVC.m */; };
 		81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D3805526134B98001CBFC6 /* AtomicTestVC.xib */; };
@@ -75,6 +78,11 @@
 		816698E72608CC880045B6F1 /* ViewController+DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+DataSource.m"; sourceTree = "<group>"; };
 		816698EF2608D1270045B6F1 /* DeallocTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeallocTestVC.h; sourceTree = "<group>"; };
 		816698F02608D1270045B6F1 /* DeallocTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeallocTestVC.m; sourceTree = "<group>"; };
+		818171BA2627441F00D0A7C8 /* AutoreleaseTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoreleaseTestVC.h; sourceTree = "<group>"; };
+		818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoreleaseTestVC.m; sourceTree = "<group>"; };
+		818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoreleaseTestVC.xib; sourceTree = "<group>"; };
+		818171C32627467400D0A7C8 /* UIBlockObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBlockObserver.h; sourceTree = "<group>"; };
+		818171C42627467400D0A7C8 /* UIBlockObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBlockObserver.m; sourceTree = "<group>"; };
 		81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvertRectVC.h; sourceTree = "<group>"; };
 		81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertRectVC.m; sourceTree = "<group>"; };
 		81D3805326134B98001CBFC6 /* AtomicTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicTestVC.h; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				8166962E2601E48E0045B6F1 /* CommonTest */,
+				816698CA2608CB700045B6F1 /* Resources */,
+				816698D62608CBEE0045B6F1 /* Info */,
 				8166964A2601E4900045B6F1 /* CommonTestTests */,
 				816696552601E4900045B6F1 /* CommonTestUITests */,
 				8166962D2601E48E0045B6F1 /* Products */,
@@ -130,10 +140,9 @@
 		8166962E2601E48E0045B6F1 /* CommonTest */ = {
 			isa = PBXGroup;
 			children = (
-				816698D62608CBEE0045B6F1 /* Info */,
+				818171C22627465B00D0A7C8 /* Base */,
 				816698CB2608CB790045B6F1 /* App */,
 				816696C22601F5F00045B6F1 /* TestVcs */,
-				816698CA2608CB700045B6F1 /* Resources */,
 				816698DA2608CC520045B6F1 /* VCModel.h */,
 				816698DB2608CC520045B6F1 /* VCModel.m */,
 				816698E02608CC670045B6F1 /* VCCell.h */,
@@ -178,6 +187,9 @@
 				81D3805326134B98001CBFC6 /* AtomicTestVC.h */,
 				81D3805426134B98001CBFC6 /* AtomicTestVC.m */,
 				81D3805526134B98001CBFC6 /* AtomicTestVC.xib */,
+				818171BA2627441F00D0A7C8 /* AutoreleaseTestVC.h */,
+				818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */,
+				818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -210,6 +222,16 @@
 				816696402601E4900045B6F1 /* Info.plist */,
 			);
 			name = Info;
+			path = CommonTest;
+			sourceTree = "<group>";
+		};
+		818171C22627465B00D0A7C8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				818171C32627467400D0A7C8 /* UIBlockObserver.h */,
+				818171C42627467400D0A7C8 /* UIBlockObserver.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +340,7 @@
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
 				8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */,
+				818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +368,11 @@
 				81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */,
 				816696372601E48E0045B6F1 /* ViewController.m in Sources */,
 				816696BE2601E61F0045B6F1 /* CancelPreviousPerformVC.m in Sources */,
+				818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */,
 				816696312601E48E0045B6F1 /* AppDelegate.m in Sources */,
 				816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */,
 				816698DC2608CC520045B6F1 /* VCModel.m in Sources */,
+				818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */,
 				816698E22608CC670045B6F1 /* VCCell.m in Sources */,
 				816696422601E4900045B6F1 /* main.m in Sources */,
 				81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */,

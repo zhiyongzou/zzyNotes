@@ -10,12 +10,20 @@
 #import "DeallocTestVC.h"
 #import "ConvertRectVC.h"
 #import "AtomicTestVC.h"
+#import "AutoreleaseTestVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *autoreleaseTest = [VCModel new];
+    autoreleaseTest.title = @"Autorelease Test";
+    autoreleaseTest.targetVC = ^UIViewController * _Nonnull{
+        return [AutoreleaseTestVC new];
+    };
+    [list addObject:autoreleaseTest];
     
     VCModel *atomicTest = [VCModel new];
     atomicTest.title = @"Atomic Test";
