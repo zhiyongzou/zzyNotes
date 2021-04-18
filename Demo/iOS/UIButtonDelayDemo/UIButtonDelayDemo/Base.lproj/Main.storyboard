@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1c1-K6-1e8"/>
+                        <viewControllerLayoutGuide type="bottom" id="ezf-Qj-bHY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCb-9S-D9w" customClass="MyButton">
+                                <rect key="frame" x="23" y="146" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button-1"/>
+                                <connections>
+                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2j-WK-Pex"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIr-6M-IYI">
+                                <rect key="frame" x="182" y="136" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.47800298271297137" green="0.28292040000063501" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fNy-hA-ju1"/>
+                                    <constraint firstAttribute="height" constant="50" id="jIC-yY-CzK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yIr-6M-IYI" firstAttribute="leading" secondItem="XCb-9S-D9w" secondAttribute="trailing" constant="99" id="LOR-Aa-XTv"/>
+                            <constraint firstItem="XCb-9S-D9w" firstAttribute="top" secondItem="1c1-K6-1e8" secondAttribute="bottom" constant="102" id="SKH-QR-onG"/>
+                            <constraint firstItem="XCb-9S-D9w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="e78-Ul-XZR"/>
+                            <constraint firstItem="yIr-6M-IYI" firstAttribute="top" secondItem="1c1-K6-1e8" secondAttribute="bottom" constant="92" id="ox3-hB-oPO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aButton" destination="XCb-9S-D9w" id="1DY-gE-yHn"/>
+                        <outlet property="aView" destination="yIr-6M-IYI" id="NTK-A3-caf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681.15942028985512" y="-26.116071428571427"/>
+        </scene>
+    </scenes>
+</document>
