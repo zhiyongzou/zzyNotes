@@ -121,14 +121,12 @@
 ## 分析
 ### UIButton 事件响应延迟具体原因如下：
 
-<!--more-->
-
-**1、**手势的事件响应优先级比 UIButton 高。官方文档：[Using Responders and the Responder Chain to Handle Events](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events)
+1、手势的事件响应优先级比 UIButton 高。官方文档：[Using Responders and the Responder Chain to Handle Events](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events)
 
 > Gesture recognizers receive touch and press events before their view does. If a view's gesture recognizers fail to recognize a sequence of touches, UIKit sends the touches to the view. If the view does not handle the touches, UIKit passes them up the responder chain
 
 
-**2、**双击手势会将 touch event 挂起一段时间（时间大概在**300 ~ 400ms**之间）用来分析其是否位双击事件，只有手势分析触摸事件结束之后才将挂起的 touch event 传给 View。此外， **`UIGestureRecognizer`** 的 **`delaysTouchesEnded`** 属性说明了一切
+2、双击手势会将 touch event 挂起一段时间（时间大概在**300 ~ 400ms**之间）用来分析其是否位双击事件，只有手势分析触摸事件结束之后才将挂起的 touch event 传给 View。此外， **`UIGestureRecognizer`** 的 **`delaysTouchesEnded`** 属性说明了一切
 
 > default is YES. causes touchesEnded or pressesEnded events to be delivered to the target view only after this gesture has failed recognition. this ensures that a touch or press that is part of the gesture can be cancelled if the gesture is recognized
 
@@ -141,7 +139,7 @@
 > When the value of this property is YES (the default) and the receiver is analyzing touch events, the window suspends delivery of touch objects in the UITouchPhaseEnded phase to the attached view. If the gesture recognizer subsequently recognizes its gesture, these touch objects are cancelled (via a touchesCancelled:withEvent: message). If the gesture recognizer does not recognize its gesture, the window delivers these objects in an invocation of the view’s touchesEnded:withEvent: method. Set this property to NO to have touch objects in the UITouchPhaseEnded delivered to the view while the gesture recognizer is analyzing the same touches.
 
 ### UIButton 事件响应调用栈差异
-对比可知：单/双击中的事件传递是不一样的，双击手势调用栈中多了一些手势相关的调用 `_UIGestureEnvironmentSortAndSendDelayedTouches:` 
+对比可知：单/双击中的事件传递是不一样的，双击手势调用栈中多了一些手势相关的调用 \_UIGestureEnvironmentSortAndSendDelayedTouches:
 
 #### 单击手势调用栈
 
@@ -184,7 +182,7 @@ self.doubleTapGesture.delegate = self;
 ```
 
 ## 结尾
-本文到此就结束了，虽然这是一个很简单的问题，但是业务上的复杂可能使其变成一个复杂的问题（P.s:当然大牛除外）。当时这个问题花了将近一天的时间去排查。最终发现原因之后慨叹：官方文档还需多看看！！！这篇文章就算是没有好好阅读的官方文档的检讨书吧。
+本文到此就结束了，虽然这是一个很简单的问题，但是业务上的复杂可能使其变成一个复杂的问题。
 
 **测试代码**：[UIButtonDelayDemo](https://github.com/zhiyongzou/zzyNotes/blob/main/Demo/iOS/UIButtonDelayDemo)
 
