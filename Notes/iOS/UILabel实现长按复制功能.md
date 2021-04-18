@@ -63,7 +63,8 @@
 * **Exception log:** `UICompatibilityInputViewController`的父控制器必须是`UIInputWindowController`，不能是其他自定义的控制器。
 
 ```bash
-'UIViewControllerHierarchyInconsistency', reason: 'child view controller:<UICompatibilityInputViewController: 0x7f9b37f00fa0> should have parent view controller:<ClipboardLabelViewController: 0x7f9b3b009b90> but requested parent is:<UIInputWindowController: 0x7f9b3801d400>'
+'UIViewControllerHierarchyInconsistency', reason: 'child view controller:<UICompatibilityInputViewController> 
+should have parent view controller:<ClipboardLabelViewController> but requested parent is:<UIInputWindowController>'
 ```
 
 * **崩溃原因：**调用UIMenuController控制器的视图层级树(view tree)存在命名为**inputView**的view。上面例子是因为ClipboardLabelViewController 定义了inputView。
