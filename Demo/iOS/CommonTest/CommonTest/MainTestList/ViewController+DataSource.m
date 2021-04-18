@@ -11,12 +11,28 @@
 #import "ConvertRectVC.h"
 #import "AtomicTestVC.h"
 #import "AutoreleaseTestVC.h"
+#import "MRCTestVC.h"
+#import "ARCTestVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *arcTest = [VCModel new];
+    arcTest.title = @"ARC Test";
+    arcTest.targetVC = ^UIViewController * _Nonnull{
+        return [ARCTestVC new];
+    };
+    [list addObject:arcTest];
+    
+    VCModel *mrcTest = [VCModel new];
+    mrcTest.title = @"MRC Test";
+    mrcTest.targetVC = ^UIViewController * _Nonnull{
+        return [MRCTestVC new];
+    };
+    [list addObject:mrcTest];
     
     VCModel *autoreleaseTest = [VCModel new];
     autoreleaseTest.title = @"Autorelease Test";
