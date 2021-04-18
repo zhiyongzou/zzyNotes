@@ -239,3 +239,6 @@ NSLog(@"B: %@", obj3); // Thread 1: EXC_BAD_ACCESS (code=EXC_I386_GPFLT)
 |strong|__strong|
 |unsafe_unretained|__unsafe\_unretained|
 |weak|__weak|
+
+## 测试代码
+https://github.com/zhiyongzou/zzyNotes/blob/main/Demo/iOS/CommonTest/CommonTest/TestVcs/ARCTestVC.m
