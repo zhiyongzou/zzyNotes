@@ -35,3 +35,5 @@
 32. [常用 Git 命令清单](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 33. [How to get the current branch name in Git?](https://stackoverflow.com/questions/6245570/how-to-get-the-current-branch-name-in-git)
 34. [零基础入门：实时音视频技术基础知识全面盘点](https://segmentfault.com/a/1190000023362309)
+35. [GLKit Tutorial for iOS: Getting started with OpenGL ES](https://www.raywenderlich.com/5146-glkit-tutorial-for-ios-getting-started-with-opengl-es)
+36. [How to Create a 360 Video Player with OpenGL ES 3.0 and GLKit in iOS](https://medium.com/@hanton.yang/how-to-create-a-360-video-player-with-opengl-es-3-0-and-glkit-360-3f29a9cfac88)
