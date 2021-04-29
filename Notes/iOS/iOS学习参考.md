@@ -24,6 +24,6 @@
 - [Reverse Engineering Resources(逆向工程资源)](https://pewpewthespells.com/blog/re.html)
 - [Ole Begemann](https://oleb.net/blog/)
 
-## Read The Fucking Source Code
+## Source Code
 - [Swift](https://github.com/apple/swift)
 - [GCD libdispatch](https://opensource.apple.com/tarballs/libdispatch/)
