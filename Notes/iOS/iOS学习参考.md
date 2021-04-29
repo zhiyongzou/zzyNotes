@@ -24,6 +24,7 @@
 - [Reverse Engineering Resources(逆向工程资源)](https://pewpewthespells.com/blog/re.html)
 - [Ole Begemann](https://oleb.net/blog/)
 - [Hanton Yang](https://medium.com/@hanton.yang)
+- [Mike Ash Blog 深入了解底层原理相关知识](https://mikeash.com/pyblog/)
 
 ## Source Code
 - [Swift](https://github.com/apple/swift)
