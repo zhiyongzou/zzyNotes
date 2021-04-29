@@ -25,4 +25,5 @@
 - [Ole Begemann](https://oleb.net/blog/)
 
 ## Read The Fucking Source Code
+- [Swift](https://github.com/apple/swift)
 - [GCD libdispatch](https://opensource.apple.com/tarballs/libdispatch/)
