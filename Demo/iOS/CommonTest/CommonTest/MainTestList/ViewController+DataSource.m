@@ -13,12 +13,20 @@
 #import "AutoreleaseTestVC.h"
 #import "MRCTestVC.h"
 #import "ARCTestVC.h"
+#import "StringToIntTest.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *stringToIntTest = [VCModel new];
+    stringToIntTest.title = @"StringToInt Test";
+    stringToIntTest.targetVC = ^UIViewController * _Nonnull{
+        return [StringToIntTest new];
+    };
+    [list addObject:stringToIntTest];
     
     VCModel *arcTest = [VCModel new];
     arcTest.title = @"ARC Test";

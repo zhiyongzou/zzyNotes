@@ -11,6 +11,8 @@
 		81470914262A8CD200E48D71 /* MRCTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81470912262A8CD200E48D71 /* MRCTestVC.xib */; };
 		8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147099D262B0B2D00E48D71 /* ARCTestVC.m */; };
 		814709A0262B0B2E00E48D71 /* ARCTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8147099E262B0B2D00E48D71 /* ARCTestVC.xib */; };
+		815162CB2634546F004F0DD7 /* StringToIntTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 815162C92634546F004F0DD7 /* StringToIntTest.m */; };
+		815162CC2634546F004F0DD7 /* StringToIntTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815162CA2634546F004F0DD7 /* StringToIntTest.xib */; };
 		816696312601E48E0045B6F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 816696302601E48E0045B6F1 /* AppDelegate.m */; };
 		816696342601E48E0045B6F1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 816696332601E48E0045B6F1 /* SceneDelegate.m */; };
 		816696372601E48E0045B6F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816696362601E48E0045B6F1 /* ViewController.m */; };
@@ -58,6 +60,9 @@
 		8147099C262B0B2D00E48D71 /* ARCTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCTestVC.h; sourceTree = "<group>"; };
 		8147099D262B0B2D00E48D71 /* ARCTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCTestVC.m; sourceTree = "<group>"; };
 		8147099E262B0B2D00E48D71 /* ARCTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARCTestVC.xib; sourceTree = "<group>"; };
+		815162C82634546F004F0DD7 /* StringToIntTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringToIntTest.h; sourceTree = "<group>"; };
+		815162C92634546F004F0DD7 /* StringToIntTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringToIntTest.m; sourceTree = "<group>"; };
+		815162CA2634546F004F0DD7 /* StringToIntTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringToIntTest.xib; sourceTree = "<group>"; };
 		8166962C2601E48E0045B6F1 /* CommonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8166962F2601E48E0045B6F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		816696302601E48E0045B6F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -214,6 +219,9 @@
 				8147099C262B0B2D00E48D71 /* ARCTestVC.h */,
 				8147099D262B0B2D00E48D71 /* ARCTestVC.m */,
 				8147099E262B0B2D00E48D71 /* ARCTestVC.xib */,
+				815162C82634546F004F0DD7 /* StringToIntTest.h */,
+				815162C92634546F004F0DD7 /* StringToIntTest.m */,
+				815162CA2634546F004F0DD7 /* StringToIntTest.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -361,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */,
+				815162CC2634546F004F0DD7 /* StringToIntTest.xib in Resources */,
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
 				8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */,
@@ -403,6 +412,7 @@
 				818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */,
 				816698E22608CC670045B6F1 /* VCCell.m in Sources */,
 				816696422601E4900045B6F1 /* main.m in Sources */,
+				815162CB2634546F004F0DD7 /* StringToIntTest.m in Sources */,
 				81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */,
 				816696342601E48E0045B6F1 /* SceneDelegate.m in Sources */,
 				816696C52601F6250045B6F1 /* LayoutFeedbackLoopsVC.m in Sources */,
