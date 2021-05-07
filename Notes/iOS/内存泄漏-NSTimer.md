@@ -3,33 +3,48 @@
 下面的 __weak 可以避免循环引用么？
 
 ```objc
-@interface ViewController ()
+@interface TimerLeakVC ()
 
-@property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, weak) NSTimer *timer;
 
 @end
 
-@implementation ViewController
+@implementation TimerLeakVC
 
-- (void)viewDidLoad
-{
-	[super viewDidLoad];
-	    
-	__weak typeof(self) weakSelf = self;
-	self.timer = [NSTimer scheduledTimerWithTimeInterval:1
-	                                              target:weakSelf
-	                                            selector:@selector(onTimerFire)
-	                                            userInfo:nil
-	                                             repeats:YES];
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
+- (void)dealloc {
+    [_timer invalidate];
+}
+
+- (void)helloWorld {
+    NSLog(@"Hello World!");
+}
+
+- (IBAction)timerLeak:(UIButton *)sender {
+    __weak typeof(self) weakSelf = self;
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                      target:weakSelf
+                                                    selector:@selector(helloWorld)
+                                                    userInfo:nil
+                                                     repeats:YES];
+    _timer = timer;
+}
 @end
 ```
 
-官方文档的注释如下：
+官方文档的描述如下：
 > The object to which to send the message specified by aSelector when the timer fires. The timer maintains a strong reference to target until it (the timer) is invalidated.
 
 target 无论传的是 `__weak` or `__strong` 其内部还是会对其进行强引用，无法避免循环引用。
+
+其引用关系如下所示：
+
+`NSRunLoop --> NSTimer ---> TimerLeakVC`
+
+NSRunLoop 是常驻对象，同时 NSTimer 也会保留其目标对象直至定时器失效才会释放目标对象。 由于目标对象被定时器持有，所以其 dealloc 方法无法调用，定时器无法主动失效，从而导致目标对象无法释放，内存泄漏
 
 ## 解决方案
 

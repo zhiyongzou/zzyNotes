@@ -34,6 +34,8 @@
 		81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */; };
 		81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3805426134B98001CBFC6 /* AtomicTestVC.m */; };
 		81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D3805526134B98001CBFC6 /* AtomicTestVC.xib */; };
+		81FCDF9326458D37009312F1 /* TimerLeakVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FCDF9126458D37009312F1 /* TimerLeakVC.m */; };
+		81FCDF9426458D37009312F1 /* TimerLeakVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81FCDF9226458D37009312F1 /* TimerLeakVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,9 @@
 		81D3805326134B98001CBFC6 /* AtomicTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicTestVC.h; sourceTree = "<group>"; };
 		81D3805426134B98001CBFC6 /* AtomicTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicTestVC.m; sourceTree = "<group>"; };
 		81D3805526134B98001CBFC6 /* AtomicTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AtomicTestVC.xib; sourceTree = "<group>"; };
+		81FCDF9026458D37009312F1 /* TimerLeakVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerLeakVC.h; sourceTree = "<group>"; };
+		81FCDF9126458D37009312F1 /* TimerLeakVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerLeakVC.m; sourceTree = "<group>"; };
+		81FCDF9226458D37009312F1 /* TimerLeakVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerLeakVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +204,9 @@
 		816696C22601F5F00045B6F1 /* TestVcs */ = {
 			isa = PBXGroup;
 			children = (
+				81FCDF9026458D37009312F1 /* TimerLeakVC.h */,
+				81FCDF9126458D37009312F1 /* TimerLeakVC.m */,
+				81FCDF9226458D37009312F1 /* TimerLeakVC.xib */,
 				816696BC2601E61F0045B6F1 /* CancelPreviousPerformVC.h */,
 				816696BD2601E61F0045B6F1 /* CancelPreviousPerformVC.m */,
 				816696C32601F6250045B6F1 /* LayoutFeedbackLoopsVC.h */,
@@ -371,6 +379,7 @@
 				81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */,
 				815162CC2634546F004F0DD7 /* StringToIntTest.xib in Resources */,
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
+				81FCDF9426458D37009312F1 /* TimerLeakVC.xib in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
 				8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */,
 				818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */,
@@ -403,6 +412,7 @@
 				81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */,
 				816696372601E48E0045B6F1 /* ViewController.m in Sources */,
 				816696BE2601E61F0045B6F1 /* CancelPreviousPerformVC.m in Sources */,
+				81FCDF9326458D37009312F1 /* TimerLeakVC.m in Sources */,
 				81470913262A8CD200E48D71 /* MRCTestVC.m in Sources */,
 				818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */,
 				8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */,

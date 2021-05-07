@@ -14,12 +14,20 @@
 #import "MRCTestVC.h"
 #import "ARCTestVC.h"
 #import "StringToIntTest.h"
+#import "TimerLeakVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *timerLeak = [VCModel new];
+    timerLeak.title = @"Timer Leak Test";
+    timerLeak.targetVC = ^UIViewController * _Nonnull{
+        return [TimerLeakVC new];
+    };
+    [list addObject:timerLeak];
     
     VCModel *stringToIntTest = [VCModel new];
     stringToIntTest.title = @"StringToInt Test";
