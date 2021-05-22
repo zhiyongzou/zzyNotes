@@ -36,7 +36,7 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.rowHeight = 45;
+        _tableView.rowHeight = 50;
         _tableView.estimatedSectionFooterHeight = 0;
         _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.estimatedRowHeight = 0;
@@ -61,7 +61,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     VCModel *testModel = [self.testList objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:testModel.targetVC() animated:YES];
+    UIViewController *targetVC = testModel.targetVC();
+    targetVC.title = testModel.title;
+    [self.navigationController pushViewController:targetVC animated:YES];
 }
 
 @end

@@ -28,6 +28,12 @@
 		816698E22608CC670045B6F1 /* VCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698E12608CC670045B6F1 /* VCCell.m */; };
 		816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698E72608CC880045B6F1 /* ViewController+DataSource.m */; };
 		816698F12608D1270045B6F1 /* DeallocTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 816698F02608D1270045B6F1 /* DeallocTestVC.m */; };
+		816F91672650EF7900E385FE /* MasonryLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 816F91652650EF7900E385FE /* MasonryLayoutVC.m */; };
+		816F91682650EF7900E385FE /* MasonryLayoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 816F91662650EF7900E385FE /* MasonryLayoutVC.xib */; };
+		816F91782650F22700E385FE /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 816F91772650F22700E385FE /* UIColor+Extension.m */; };
+		816F91842650F59C00E385FE /* MasonryViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 816F91832650F59C00E385FE /* MasonryViewLayout.m */; };
+		8174F0C526589E7A008F06D7 /* ShiftOperatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8174F0C326589E7A008F06D7 /* ShiftOperatorVC.m */; };
+		8174F0C626589E7A008F06D7 /* ShiftOperatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8174F0C426589E7A008F06D7 /* ShiftOperatorVC.xib */; };
 		818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */; };
 		818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */; };
 		818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171C42627467400D0A7C8 /* UIBlockObserver.m */; };
@@ -95,6 +101,16 @@
 		816698E72608CC880045B6F1 /* ViewController+DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+DataSource.m"; sourceTree = "<group>"; };
 		816698EF2608D1270045B6F1 /* DeallocTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeallocTestVC.h; sourceTree = "<group>"; };
 		816698F02608D1270045B6F1 /* DeallocTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeallocTestVC.m; sourceTree = "<group>"; };
+		816F91642650EF7900E385FE /* MasonryLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryLayoutVC.h; sourceTree = "<group>"; };
+		816F91652650EF7900E385FE /* MasonryLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryLayoutVC.m; sourceTree = "<group>"; };
+		816F91662650EF7900E385FE /* MasonryLayoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasonryLayoutVC.xib; sourceTree = "<group>"; };
+		816F91762650F22700E385FE /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		816F91772650F22700E385FE /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		816F91822650F59C00E385FE /* MasonryViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryViewLayout.h; sourceTree = "<group>"; };
+		816F91832650F59C00E385FE /* MasonryViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryViewLayout.m; sourceTree = "<group>"; };
+		8174F0C226589E7A008F06D7 /* ShiftOperatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiftOperatorVC.h; sourceTree = "<group>"; };
+		8174F0C326589E7A008F06D7 /* ShiftOperatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftOperatorVC.m; sourceTree = "<group>"; };
+		8174F0C426589E7A008F06D7 /* ShiftOperatorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShiftOperatorVC.xib; sourceTree = "<group>"; };
 		818171BA2627441F00D0A7C8 /* AutoreleaseTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoreleaseTestVC.h; sourceTree = "<group>"; };
 		818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoreleaseTestVC.m; sourceTree = "<group>"; };
 		818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoreleaseTestVC.xib; sourceTree = "<group>"; };
@@ -204,32 +220,10 @@
 		816696C22601F5F00045B6F1 /* TestVcs */ = {
 			isa = PBXGroup;
 			children = (
-				81FCDF9026458D37009312F1 /* TimerLeakVC.h */,
-				81FCDF9126458D37009312F1 /* TimerLeakVC.m */,
-				81FCDF9226458D37009312F1 /* TimerLeakVC.xib */,
-				816696BC2601E61F0045B6F1 /* CancelPreviousPerformVC.h */,
-				816696BD2601E61F0045B6F1 /* CancelPreviousPerformVC.m */,
-				816696C32601F6250045B6F1 /* LayoutFeedbackLoopsVC.h */,
-				816696C42601F6250045B6F1 /* LayoutFeedbackLoopsVC.m */,
-				816698EF2608D1270045B6F1 /* DeallocTestVC.h */,
-				816698F02608D1270045B6F1 /* DeallocTestVC.m */,
-				81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */,
-				81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */,
-				81D3805326134B98001CBFC6 /* AtomicTestVC.h */,
-				81D3805426134B98001CBFC6 /* AtomicTestVC.m */,
-				81D3805526134B98001CBFC6 /* AtomicTestVC.xib */,
-				818171BA2627441F00D0A7C8 /* AutoreleaseTestVC.h */,
-				818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */,
-				818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */,
-				81470910262A8CD200E48D71 /* MRCTestVC.h */,
-				81470911262A8CD200E48D71 /* MRCTestVC.m */,
-				81470912262A8CD200E48D71 /* MRCTestVC.xib */,
-				8147099C262B0B2D00E48D71 /* ARCTestVC.h */,
-				8147099D262B0B2D00E48D71 /* ARCTestVC.m */,
-				8147099E262B0B2D00E48D71 /* ARCTestVC.xib */,
-				815162C82634546F004F0DD7 /* StringToIntTest.h */,
-				815162C92634546F004F0DD7 /* StringToIntTest.m */,
-				815162CA2634546F004F0DD7 /* StringToIntTest.xib */,
+				816F916C2650EF8B00E385FE /* PreVCS */,
+				8174F0C226589E7A008F06D7 /* ShiftOperatorVC.h */,
+				8174F0C326589E7A008F06D7 /* ShiftOperatorVC.m */,
+				8174F0C426589E7A008F06D7 /* ShiftOperatorVC.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -265,11 +259,51 @@
 			path = CommonTest;
 			sourceTree = "<group>";
 		};
+		816F916C2650EF8B00E385FE /* PreVCS */ = {
+			isa = PBXGroup;
+			children = (
+				816F91642650EF7900E385FE /* MasonryLayoutVC.h */,
+				816F91652650EF7900E385FE /* MasonryLayoutVC.m */,
+				816F91662650EF7900E385FE /* MasonryLayoutVC.xib */,
+				816F91822650F59C00E385FE /* MasonryViewLayout.h */,
+				816F91832650F59C00E385FE /* MasonryViewLayout.m */,
+				81FCDF9026458D37009312F1 /* TimerLeakVC.h */,
+				81FCDF9126458D37009312F1 /* TimerLeakVC.m */,
+				81FCDF9226458D37009312F1 /* TimerLeakVC.xib */,
+				816696BC2601E61F0045B6F1 /* CancelPreviousPerformVC.h */,
+				816696BD2601E61F0045B6F1 /* CancelPreviousPerformVC.m */,
+				816696C32601F6250045B6F1 /* LayoutFeedbackLoopsVC.h */,
+				816696C42601F6250045B6F1 /* LayoutFeedbackLoopsVC.m */,
+				816698EF2608D1270045B6F1 /* DeallocTestVC.h */,
+				816698F02608D1270045B6F1 /* DeallocTestVC.m */,
+				81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */,
+				81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */,
+				81D3805326134B98001CBFC6 /* AtomicTestVC.h */,
+				81D3805426134B98001CBFC6 /* AtomicTestVC.m */,
+				81D3805526134B98001CBFC6 /* AtomicTestVC.xib */,
+				818171BA2627441F00D0A7C8 /* AutoreleaseTestVC.h */,
+				818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */,
+				818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */,
+				81470910262A8CD200E48D71 /* MRCTestVC.h */,
+				81470911262A8CD200E48D71 /* MRCTestVC.m */,
+				81470912262A8CD200E48D71 /* MRCTestVC.xib */,
+				8147099C262B0B2D00E48D71 /* ARCTestVC.h */,
+				8147099D262B0B2D00E48D71 /* ARCTestVC.m */,
+				8147099E262B0B2D00E48D71 /* ARCTestVC.xib */,
+				815162C82634546F004F0DD7 /* StringToIntTest.h */,
+				815162C92634546F004F0DD7 /* StringToIntTest.m */,
+				815162CA2634546F004F0DD7 /* StringToIntTest.xib */,
+			);
+			path = PreVCS;
+			sourceTree = "<group>";
+		};
 		818171C22627465B00D0A7C8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				818171C32627467400D0A7C8 /* UIBlockObserver.h */,
 				818171C42627467400D0A7C8 /* UIBlockObserver.m */,
+				816F91762650F22700E385FE /* UIColor+Extension.h */,
+				816F91772650F22700E385FE /* UIColor+Extension.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -384,6 +418,8 @@
 				8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */,
 				818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */,
 				814709A0262B0B2E00E48D71 /* ARCTestVC.xib in Resources */,
+				8174F0C626589E7A008F06D7 /* ShiftOperatorVC.xib in Resources */,
+				816F91682650EF7900E385FE /* MasonryLayoutVC.xib in Resources */,
 				81470914262A8CD200E48D71 /* MRCTestVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,13 +448,17 @@
 				81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */,
 				816696372601E48E0045B6F1 /* ViewController.m in Sources */,
 				816696BE2601E61F0045B6F1 /* CancelPreviousPerformVC.m in Sources */,
+				816F91672650EF7900E385FE /* MasonryLayoutVC.m in Sources */,
 				81FCDF9326458D37009312F1 /* TimerLeakVC.m in Sources */,
 				81470913262A8CD200E48D71 /* MRCTestVC.m in Sources */,
 				818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */,
 				8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */,
 				816696312601E48E0045B6F1 /* AppDelegate.m in Sources */,
 				816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */,
+				816F91782650F22700E385FE /* UIColor+Extension.m in Sources */,
 				816698DC2608CC520045B6F1 /* VCModel.m in Sources */,
+				816F91842650F59C00E385FE /* MasonryViewLayout.m in Sources */,
+				8174F0C526589E7A008F06D7 /* ShiftOperatorVC.m in Sources */,
 				818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */,
 				816698E22608CC670045B6F1 /* VCCell.m in Sources */,
 				816696422601E4900045B6F1 /* main.m in Sources */,
@@ -599,6 +639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F24R2G835;
 				INFOPLIST_FILE = CommonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -616,6 +657,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F24R2G835;
 				INFOPLIST_FILE = CommonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

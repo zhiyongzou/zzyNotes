@@ -15,12 +15,28 @@
 #import "ARCTestVC.h"
 #import "StringToIntTest.h"
 #import "TimerLeakVC.h"
+#import "MasonryLayoutVC.h"
+#import "ShiftOperatorVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *shiftOperator = [VCModel new];
+    shiftOperator.title = @"Shift Operator";
+    shiftOperator.targetVC = ^UIViewController * _Nonnull{
+        return [ShiftOperatorVC new];
+    };
+    [list addObject:shiftOperator];
+    
+    VCModel *masonryLayout = [VCModel new];
+    masonryLayout.title = @"Masonry Layout";
+    masonryLayout.targetVC = ^UIViewController * _Nonnull{
+        return [MasonryLayoutVC new];
+    };
+    [list addObject:masonryLayout];
     
     VCModel *timerLeak = [VCModel new];
     timerLeak.title = @"Timer Leak Test";
