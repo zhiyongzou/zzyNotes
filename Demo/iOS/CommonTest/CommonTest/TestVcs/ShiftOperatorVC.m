@@ -17,6 +17,19 @@
     [super viewDidLoad];
     
     {
+        // 0111 1111 1111 1111 1111 1111 1111 1111
+        // + 1 变为
+        // 1000 0000 0000 0000 0000 0000 0000 0000
+        int a = INT_MAX;
+        NSLog(@"INT_MIN: %d", INT_MIN);
+        NSLog(@"INT_MAX: %d", a);
+        int b = a + 1;
+        NSLog(@"%d", b);
+        int c = b - 1;
+        NSLog(@"c = %d", c);
+    }
+    
+    {
         int a = 1, b = 2;
         int c = a | b;
         NSLog(@"%d", c);
