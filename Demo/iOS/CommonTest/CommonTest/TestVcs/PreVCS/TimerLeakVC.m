@@ -6,6 +6,7 @@
 //
 
 #import "TimerLeakVC.h"
+#import "NSTimer+Extension.h"
 
 @interface TimerLeakVC ()
 
@@ -15,12 +16,9 @@
 
 @implementation TimerLeakVC
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (void)dealloc {
     [_timer invalidate];
+    NSLog(@"%s", __func__);
 }
 
 - (void)helloWorld {
@@ -29,19 +27,34 @@
 
 - (IBAction)timerLeak:(UIButton *)sender {
     __weak typeof(self) weakSelf = self;
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1
-                                                      target:weakSelf
-                                                    selector:@selector(helloWorld)
-                                                    userInfo:nil
-                                                     repeats:YES];
-    _timer = timer;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                              target:weakSelf
+                                            selector:@selector(helloWorld)
+                                            userInfo:nil
+                                             repeats:YES];
 }
 
 - (IBAction)timerDeallocByBlock:(UIButton *)sender {
-    
+    __weak typeof(self) weakSelf = self;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                             repeats:YES
+                                             forMode:NSRunLoopCommonModes
+                                               block:^(NSTimeInterval time) {
+        [weakSelf helloWorld];
+    }];
 }
 
 - (IBAction)timerDeallocByWeakProxy:(UIButton *)sender {
     
 }
+
+- (IBAction)timerDeallocBySystemApi:(UIButton *)sender {
+    __weak typeof(self) weakSelf = self;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                             repeats:YES
+                                               block:^(NSTimer * _Nonnull timer) {
+        [weakSelf helloWorld];
+    }];
+}
+
 @end

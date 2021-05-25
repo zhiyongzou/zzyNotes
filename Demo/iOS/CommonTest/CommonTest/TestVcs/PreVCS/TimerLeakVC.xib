@@ -51,16 +51,29 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-yu-khQ">
+                    <rect key="frame" x="238" y="237" width="86" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="801-Eq-JS0"/>
+                        <constraint firstAttribute="height" constant="30" id="U5d-X6-mGA"/>
+                    </constraints>
+                    <state key="normal" title="iOS 10 Block"/>
+                    <connections>
+                        <action selector="timerDeallocBySystemApi:" destination="-1" eventType="touchUpInside" id="DQx-8M-xJ1"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="7tL-Ut-CG6" firstAttribute="top" secondItem="3ov-Tk-9EB" secondAttribute="bottom" constant="29" id="0fR-tT-LGA"/>
                 <constraint firstItem="7oL-zX-tGI" firstAttribute="top" secondItem="cAH-dV-7Uf" secondAttribute="bottom" constant="29" id="6Tj-hL-qvd"/>
+                <constraint firstItem="nZQ-yu-khQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="193" id="768-V4-dqv"/>
                 <constraint firstItem="3ov-Tk-9EB" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="134" id="Bkc-by-MGf"/>
                 <constraint firstItem="cAH-dV-7Uf" firstAttribute="top" secondItem="7tL-Ut-CG6" secondAttribute="bottom" constant="29" id="KCc-8D-8MH"/>
                 <constraint firstItem="7tL-Ut-CG6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="47" id="MRg-zJ-OfV"/>
                 <constraint firstItem="7oL-zX-tGI" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="47" id="YJF-97-nyd"/>
+                <constraint firstItem="nZQ-yu-khQ" firstAttribute="leading" secondItem="7tL-Ut-CG6" secondAttribute="trailing" constant="29" id="stw-TM-Ain"/>
                 <constraint firstItem="3ov-Tk-9EB" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="47" id="tQS-Rj-yCk"/>
                 <constraint firstItem="cAH-dV-7Uf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="47" id="ty6-HF-SJm"/>
             </constraints>
