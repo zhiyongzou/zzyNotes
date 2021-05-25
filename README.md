@@ -14,7 +14,7 @@
 | C       | ▫︎ [C位运算符](/Notes/C:C%2B%2B/C位运算符.md)|
 | C++     | ▫︎ ...    |
 
-## Design Patterns 
+## Design Patterns 😄
 | Category| Notes|
 |:-- |:-- |
 | 五大原则  | ▫︎ ...    |
