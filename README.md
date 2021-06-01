@@ -4,7 +4,7 @@
 
 | Category| Notes|
 |:-- |:-- |
-| Objective-C         | ▫︎ [类与元类](/Notes/iOS/ClassesAndMetaclasses.md) <br> ▫︎ [自动引用计数ARC](/Notes/iOS/自动引用计数ARC.md) <br> ▫︎ [Objective-C预处理器](/Notes/iOS/Objective-C预处理器.md) |
+| Objective-C         |  ▫︎ [深入理解 iOS 热修复原理](https://github.com/zhiyongzou/DynamicOC) <br> ▫︎ [类与元类](/Notes/iOS/ClassesAndMetaclasses.md) <br> ▫︎ [自动引用计数ARC](/Notes/iOS/自动引用计数ARC.md) <br> ▫︎ [Objective-C预处理器](/Notes/iOS/Objective-C预处理器.md) |
 | Foundation &  UIKit |  ▫︎ [iOS坐标转换](/Notes/iOS/iOS%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2.md) <br>  ▫︎ [UIButton 点击响应延迟](/Notes/iOS/UIButton%20点击响应延迟.md) 	<br>  ▫︎ [UILabel实现长按复制功能](/Notes/iOS/UILabel实现长按复制功能.md)|
 | Swift 	            |  	|
 | Xcode 	            |  ▫︎ [Xcode的一些使用技巧](/Notes/iOS/Xcode的一些使用技巧.md)|
