@@ -2,7 +2,7 @@
 - [Apple Guides and Sample Code](https://developer.apple.com/library/archive/navigation/)
 - [raywenderlich.com: iOS & Swift Articles](https://www.raywenderlich.com/ios/articles)
 - [NSHipster 中文](https://nshipster.cn/)
-- [Clang 12 documentation](https://clang.llvm.org/docs/index.html)
+- [Clang 13 documentation](https://clang.llvm.org/docs/index.html)
 - [ObjC 中国](https://objccn.io/issues/)
 - [SwiftGG](https://swift.gg/)
 - [Stack Overflow Questions tagged \[ios\]: More Votes](https://stackoverflow.com/questions/tagged/ios?tab=Votes)
