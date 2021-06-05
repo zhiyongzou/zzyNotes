@@ -12,7 +12,7 @@
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                     repeats:(BOOL)repeats
                                     forMode:(NSRunLoopMode)mode
-                                      block:(void(^)(NSTimeInterval time))block {
+                                      block:(void(^)(NSTimer * _Nonnull timer))block {
     
     // 将 NSTimer 类对象作为 target，这样子就可以完美的解决强引用 VC 的问题。由于 VC 不再被定时器引用，
     // 所以 VC 就可以正常释放了
@@ -29,11 +29,12 @@
 
 + (void)blockInvoke:(NSTimer *)timer
 {
-    if (timer.isValid) {
-        void (^block)(NSTimeInterval) = timer.userInfo;
-        if (block) {
-            block([timer timeInterval]);
-        }
+    if (!timer.isValid) {
+        return;
+    }
+    void (^block)(NSTimer * _Nonnull) = timer.userInfo;
+    if (block) {
+        block(timer);
     }
 }
 

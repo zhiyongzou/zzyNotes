@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                     repeats:(BOOL)repeats
                                     forMode:(NSRunLoopMode)mode
-                                      block:(void(^)(NSTimeInterval time))block;
+                                      block:(void(^)(NSTimer * _Nonnull timer))block;
 
 @end
 
