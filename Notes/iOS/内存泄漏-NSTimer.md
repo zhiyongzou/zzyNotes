@@ -1,6 +1,6 @@
 ## 为什么 NSTimer 使用 target 方式回调可能会导致内存泄漏？
 
-在日常的业务开发中，NSTimer 经常会用来做一些定时任务。对于重复执行任务的定时器，我们一般都会强引用定时器，并且在 dealloc 方法里面去失效（`[_timer invalidate]`）定时器。
+在日常的业务开发中，NSTimer 经常会用来做一些定时任务。对于重复执行任务的定时器，我们一般都会强引用定时器，并且在目标对象的 dealloc 方法里面去失效（`[_timer invalidate]`）定时器。
 
 但是我们发现目标对象的 dealloc 方法并不会调用，这由于定时器会强引用其目标对象，从而导致循环引用。其引用关系如下：
 
@@ -45,7 +45,7 @@
 
 ### 原因分析
 
-分析前先看一个示例代码，示例代码会输出什么日志？ 
+我们先看一个示例代码，下面会输出什么日志？ 
 
 ```objc
 - (IBAction)timerInOtherThread {
@@ -60,7 +60,7 @@
 }
 ```
 
-你会发现，上面只是打印出了：`-[TimerLeakVC timerInOtherThread]...`，这是为什么呢？这是因为：只有把定时器加到运行循环，它才可以正常触发任务。
+你会发现，上面只是打印出了：`-[TimerLeakVC timerInOtherThread]...`，这是为什么呢？那是因为**只有把定时器加到运行循环，它才可以正常触发任务**。
 
 至此我们知道**定时器（Timer）**也会被**主运行循环（Main Run Loop）**持有。
 
@@ -71,13 +71,13 @@
 
 > 其实`__weak`只是告诉编译器不要强引用（不插入 retain）😀，timer 内部并不会因为是 weak target 而放弃对其强引用
 
-从上面的分析可得定时器的最终引用关系如下图所示：
+从上面的分析可得它们的引用关系如下：
 
 <img src="../imgs/timer_ref.jpg">
 
-**综上所述：**
+**综上所得：**
 
-主线程 RunLoop 是常驻对象，同时 NSTimer 也会保留其目标对象直至定时器失效才会释放目标对象。 由于目标对象被定时器持有，控制器无法释放，所以 dealloc 方法不会被调用，因此定时器也无法主动失效，最终导致内存泄漏。
+主线程 RunLoop 是常驻对象，同时 NSTimer 也会保留其目标对象直至定时器失效才会释放目标对象。 所以目标对象会被定时器一直持有，导致控制器无法释放，所以 dealloc 方法不会被调用，因此定时器也无法主动失效，最终导致内存泄漏。
 
 ### 解决方案
 我们知道了导致内存泄漏的真正原因，那我们就可以对症下药。我们只要保证 NSTimer 不直接引用目标对象即可解决问题。下面介绍下三种解决方案
@@ -143,7 +143,7 @@
 #### 方案 3
 如果一定要用 target 方式去使用定时器，有没有办法解决呢？答案是肯定的。相信大家都听过这样一句计算机名言：`Any problem  in computer science can be solved by another layer of indirection`
 
-我们只要增加一个中间目标对象，然后中间目标对象将消息转发对真正的目标对象，这就很好的解决了这个问题。而 OC 也专门干这种事的类：**NSProxy**
+我们只要增加一个中间目标对象，让它作为 timer 的 target, 然后通过中间目标对象将消息转发对真正的目标对象，这就很好的解决了这个问题。而 OC 也专门干这种事的类：**NSProxy**
 
 TimerTargetProxy 具体实现如下：
 
@@ -188,12 +188,12 @@ _timerProxy = [[TimerTargetProxy alloc] initWithTarget:self];
 
 ```
 
-他们之前的引用关系如下：
+它们之间的引用关系如下：
 
 <img src="../imgs/timer_proxy.jpg">
 
 
 ## 总结
-从上面三种解决方案中，个人比较推荐方案 2，此外，苹果 iOS10 以后也给出跟 2 相同的方案。
+在这三种解决方案中，个人比较推荐方案 2，此外，苹果 iOS10 以后也给出跟 2 相同的方案。
 
-测试代码：
+测试代码：[TimerLeakVC.m](https://hub.fastgit.org/zhiyongzou/zzyNotes/blob/main/Demo/iOS/CommonTest/CommonTest/TestVcs/PreVCS/TimerLeakVC.m)
