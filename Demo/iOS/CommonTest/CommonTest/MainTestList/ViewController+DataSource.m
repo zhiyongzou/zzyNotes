@@ -15,6 +15,7 @@
 #import "ARCTestVC.h"
 #import "StringToIntTest.h"
 #import "TimerLeakVC.h"
+#import "GradientTestVC.h"
 #import "MasonryLayoutVC.h"
 #import "ShiftOperatorVC.h"
 
@@ -23,6 +24,13 @@
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *gradient = [VCModel new];
+    gradient.title = @"Gradient Test";
+    gradient.targetVC = ^UIViewController * _Nonnull{
+        return [GradientTestVC new];
+    };
+    [list addObject:gradient];
     
     VCModel *shiftOperator = [VCModel new];
     shiftOperator.title = @"Shift Operator";
