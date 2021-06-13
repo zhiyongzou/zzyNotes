@@ -38,6 +38,9 @@
 		818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */; };
 		818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */; };
 		818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171C42627467400D0A7C8 /* UIBlockObserver.m */; };
+		819D013D26705E0500F3E576 /* GradientTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D013B26705E0500F3E576 /* GradientTestVC.m */; };
+		819D013E26705E0500F3E576 /* GradientTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819D013C26705E0500F3E576 /* GradientTestVC.xib */; };
+		819D01412670648600F3E576 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D01402670648600F3E576 /* UIView+Frame.m */; };
 		81D37576260CBD7D001CBFC6 /* ConvertRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */; };
 		81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3805426134B98001CBFC6 /* AtomicTestVC.m */; };
 		81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D3805526134B98001CBFC6 /* AtomicTestVC.xib */; };
@@ -120,6 +123,11 @@
 		818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoreleaseTestVC.xib; sourceTree = "<group>"; };
 		818171C32627467400D0A7C8 /* UIBlockObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBlockObserver.h; sourceTree = "<group>"; };
 		818171C42627467400D0A7C8 /* UIBlockObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBlockObserver.m; sourceTree = "<group>"; };
+		819D013A26705E0500F3E576 /* GradientTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientTestVC.h; sourceTree = "<group>"; };
+		819D013B26705E0500F3E576 /* GradientTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientTestVC.m; sourceTree = "<group>"; };
+		819D013C26705E0500F3E576 /* GradientTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientTestVC.xib; sourceTree = "<group>"; };
+		819D013F2670648600F3E576 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		819D01402670648600F3E576 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		81D37574260CBD7D001CBFC6 /* ConvertRectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvertRectVC.h; sourceTree = "<group>"; };
 		81D37575260CBD7D001CBFC6 /* ConvertRectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertRectVC.m; sourceTree = "<group>"; };
 		81D3805326134B98001CBFC6 /* AtomicTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicTestVC.h; sourceTree = "<group>"; };
@@ -227,9 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				816F916C2650EF8B00E385FE /* PreVCS */,
-				8174F0C226589E7A008F06D7 /* ShiftOperatorVC.h */,
-				8174F0C326589E7A008F06D7 /* ShiftOperatorVC.m */,
-				8174F0C426589E7A008F06D7 /* ShiftOperatorVC.xib */,
+				819D013A26705E0500F3E576 /* GradientTestVC.h */,
+				819D013B26705E0500F3E576 /* GradientTestVC.m */,
+				819D013C26705E0500F3E576 /* GradientTestVC.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -268,6 +276,9 @@
 		816F916C2650EF8B00E385FE /* PreVCS */ = {
 			isa = PBXGroup;
 			children = (
+				8174F0C226589E7A008F06D7 /* ShiftOperatorVC.h */,
+				8174F0C326589E7A008F06D7 /* ShiftOperatorVC.m */,
+				8174F0C426589E7A008F06D7 /* ShiftOperatorVC.xib */,
 				816F91642650EF7900E385FE /* MasonryLayoutVC.h */,
 				816F91652650EF7900E385FE /* MasonryLayoutVC.m */,
 				816F91662650EF7900E385FE /* MasonryLayoutVC.xib */,
@@ -314,6 +325,8 @@
 				814924B3265D48200050A1A1 /* NSTimer+Extension.m */,
 				81E7BFE2266B7E6C00239673 /* TimerTargetProxy.h */,
 				81E7BFE3266B7E6C00239673 /* TimerTargetProxy.m */,
+				819D013F2670648600F3E576 /* UIView+Frame.h */,
+				819D01402670648600F3E576 /* UIView+Frame.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -422,6 +435,7 @@
 			files = (
 				81D3805726134B98001CBFC6 /* AtomicTestVC.xib in Resources */,
 				815162CC2634546F004F0DD7 /* StringToIntTest.xib in Resources */,
+				819D013E26705E0500F3E576 /* GradientTestVC.xib in Resources */,
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				81FCDF9426458D37009312F1 /* TimerLeakVC.xib in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
@@ -463,6 +477,7 @@
 				81470913262A8CD200E48D71 /* MRCTestVC.m in Sources */,
 				818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */,
 				8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */,
+				819D01412670648600F3E576 /* UIView+Frame.m in Sources */,
 				816696312601E48E0045B6F1 /* AppDelegate.m in Sources */,
 				816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */,
 				816F91782650F22700E385FE /* UIColor+Extension.m in Sources */,
@@ -473,6 +488,7 @@
 				816698E22608CC670045B6F1 /* VCCell.m in Sources */,
 				814924B4265D48200050A1A1 /* NSTimer+Extension.m in Sources */,
 				816696422601E4900045B6F1 /* main.m in Sources */,
+				819D013D26705E0500F3E576 /* GradientTestVC.m in Sources */,
 				815162CB2634546F004F0DD7 /* StringToIntTest.m in Sources */,
 				81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */,
 				816696342601E48E0045B6F1 /* SceneDelegate.m in Sources */,
