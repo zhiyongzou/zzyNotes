@@ -14,6 +14,7 @@
     _model = model;
     
     self.textLabel.text = model.title;
+    self.textLabel.numberOfLines = 2;
 }
 
 @end

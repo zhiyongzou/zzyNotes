@@ -18,12 +18,28 @@
 #import "GradientTestVC.h"
 #import "MasonryLayoutVC.h"
 #import "ShiftOperatorVC.h"
+#import "iOS11AdaptVC.h"
+#import "BlurEffectTestVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *blurEffec = [VCModel new];
+    blurEffec.title = @"iOS10 UIBlurEffec Disable By Mask";
+    blurEffec.targetVC = ^UIViewController * _Nonnull{
+        return [BlurEffectTestVC new];
+    };
+    [list addObject:blurEffec];
+    
+    VCModel *ios11 = [VCModel new];
+    ios11.title = @"iOS 11 Adapt";
+    ios11.targetVC = ^UIViewController * _Nonnull{
+        return [iOS11AdaptVC new];
+    };
+    [list addObject:ios11];
     
     VCModel *gradient = [VCModel new];
     gradient.title = @"Gradient Test";
