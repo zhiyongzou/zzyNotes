@@ -216,7 +216,7 @@ int *integer_pointer = integer_pointer_returning_function();
 开启方式：`Product -> Scheme -> Edit Scheme -> Diagnostics -> Zombie Objects`。
 
 ### Memory Graph
-Memory Graph 可以帮助我们查找和修复泄漏和废弃的内存，它有点类似于 View Hierarchy，它可以很方便的查看对象的引用关系，而且该对象存在内存泄漏，那么该对象则会被标记上感叹号 ⚠️。
+Memory Graph 可以帮助我们查找和修复泄漏和废弃的内存，它有点类似于 View Hierarchy，它可以很方便的查看对象的引用关系，而且该对象存在内存泄漏，那么该对象则会被标记上**感叹号(!)**。
 
 开启 Memory Graph 时程序会暂停执行，并且显示存活在堆上的对象以及对象的引用关系链。开启方式如下：
 
