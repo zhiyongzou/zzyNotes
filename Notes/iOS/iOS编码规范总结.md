@@ -385,7 +385,7 @@ for (UIView *subview in self.subviews) {
 ```
 
 ### 分类避免使用 property
-给 **Category** 增加关联属性时避免直接声明 **property** ，应该使用对应的存取方法代替。这样可以避免由于归档时将该变量存入本地数据库，防止版本更新可能导致数据类型不对的异常。例如：V1.0 myObject 是 NSNumber，在 V2.0时由于 xx 原因改为 NSString。如果测试没有覆盖到，那么上线你会哭
+给 **Category** 增加自定义关联属性时避免直接声明 **property** ，应该使用对应的存取方法代替。这样可以避免由于归档时将该变量存入本地数据库，防止版本更新可能导致数据类型不对的异常。例如：V1.0 myObject 是 NSNumber，在 V2.0时由于 xx 原因改为 NSString。如果测试没有覆盖到，那么上线你会哭
 
 ```objc
 @interface NSObject (Extension)
@@ -496,7 +496,7 @@ CGRectGetMinY(self.frame);
 ```
 
 ### 多使用 sizeWithAttributes 计算文本
-建议文本计算使用 **sizeWithAttributes：** 代替 **sizeToFit**。原因是 **sizeToFit** 开销大，会影响滑动性能。 **sizeToFit** 不但把文本宽高计算出来，而且还帮你把 **frame** 都一起设置了。由于你还是需要手动设置 frame 的，所以相当于多设置一次 frame , 而且 **sizeToFit** 背后做的事情远不止这些，具体使用 **instruments** 查看其调用栈。
+建议文本计算使用 **sizeWithAttributes** 代替 **sizeToFit**。原因是 **sizeToFit** 开销大，会影响滑动性能。 **sizeToFit** 不但把文本宽高计算出来，而且还帮你把 **frame** 都一起设置了。由于你还是需要手动设置 frame 的，所以相当于多设置一次 frame , 而且 **sizeToFit** 背后做的事情远不止这些，具体使用 **instruments** 查看其调用栈。
 
 ```objc
 // 不推荐
@@ -620,8 +620,8 @@ self.titleLabel.frame = CGRectIntegral(CGRectMake(6, 6, title_w, 6));
 @end
 ```
 
-### 对象初始化依赖多参数时多属性赋值
-如果创建一个对象需要调用者传多个参数进行初始化时，此时最好不要使用**多属性赋值**，而是封装成一个方法给调用者，这样可以避免属性赋值顺序等问题。这里强调 `初始化`，一些特殊的属性更新除外 
+### 对象初始化依赖多个参数时避免多属性赋值
+如果创建一个对象需要调用者传多个参数进行初始化时，此时最好不要使用**多属性赋值**，而是封装成一个方法给调用者，这样可以避免属性赋值顺序等问题。这里强调 `初始化`，一些特定的属性值更新除外 
 
 ```objc
 @interface MyView : UIView
@@ -644,7 +644,7 @@ my.topMargin = 0;
 @end
 ```
 
-### 合理使用	BitMask 合并多个请求
+### 合理使用 BitMask 合并多个请求
 如何合并多个服务器请求？这里可以合理 **位掩码**（BitMask），好处就是代码简洁易懂，计算速度快等
 
 ```objc
