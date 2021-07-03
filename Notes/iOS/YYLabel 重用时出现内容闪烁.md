@@ -1,6 +1,5 @@
 # YYLabel 重用时出现内容闪烁
 
-## 原因
 [YYLabel](https://github.com/ibireme/YYText) 为了有更好的用户体验在内容展示加了一个渐变动画。这个动画是由`contentsNeedFade`控制的（这里不讨论异步渲染的情况）。在没有点击的情况下`contentsNeedFade`是处于关闭状态的，如果触发内容点击操作，那么`contentsNeedFade` 则会被打开。此时 YYLable 被重用的话就会出现内容 “**闪烁**” 的问题（闪烁其实就是这个渐变动画）。
 
 作者给开发者一个关闭这个动画的属性`fadeOnHighlight`，只要设置为`NO`即可避免重用的闪现问题。不幸的是在用户触摸时取消触摸事件（即触发：`touchesCancelled:withEvent:`）的情况下依然会出现闪现问题。这是因为在`_endTouch`方法里面的 `_removeHighlightAnimated` 是直接写死 YES 的，这导致了`contentsNeedFade` 被迫打开，最终造成了重用闪现的问题。具体源码如下：
