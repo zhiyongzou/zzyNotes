@@ -10,7 +10,7 @@
 | Other               |  ▫︎ [iOS 学习参考](/Notes/iOS/iOS学习参考.md) <br>  ▫︎ [iOS 调试技巧](/Notes/iOS/iOS%20调试技巧.md) <br>  ▫︎ [iOS Zombie Object 原理探索](/Notes/iOS/iOS%20Zombie%20Object%20原理探索.md) <br>  ▫︎ [YYLabel 重用时出现内容闪烁](/Notes/iOS/YYLabel%20重用时出现内容闪烁.md) <br>  ▫︎ [iOS 编码规范总结](/Notes/iOS/iOS编码规范总结.md)|
 
 
-## C/C++ 😂
+## C/C++ 
 | Category| Notes|
 |:-- |:-- |
 | C       | ▫︎ [C 位运算符](/Notes/C:C%2B%2B/C位运算符.md)|
