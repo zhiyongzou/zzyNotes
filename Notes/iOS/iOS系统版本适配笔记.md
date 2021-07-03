@@ -5,7 +5,7 @@
 ## iOS 11
 
 ### [UICollectionView 的 VerticalScrollIndicator 被 SectionHeaderView 遮盖]()
-* **原因：**iOS11 SectionHeaderView 的 zPosition = 1，iOS11之前为0
+* **原因：**iOS11 SectionHeaderView 的 zPosition = 1，iOS11 之前为 0
 
 * **解决：**方案1可以在 delegate 方法`willDisplaySupplementaryView`中改变 zPosition（适用 iOS8 以上），方案 2 可以在 SectionHeaderView 中重写`didMoveToWindow`方法。
 

@@ -18,7 +18,7 @@
 #import "GradientTestVC.h"
 #import "MasonryLayoutVC.h"
 #import "ShiftOperatorVC.h"
-#import "iOS11AdaptVC.h"
+#import "iOSAdaptVC.h"
 #import "BlurEffectTestVC.h"
 
 @implementation ViewController (DataSource)
@@ -35,9 +35,9 @@
     [list addObject:blurEffec];
     
     VCModel *ios11 = [VCModel new];
-    ios11.title = @"iOS 11 Adapt";
+    ios11.title = @"iOS System Adapt";
     ios11.targetVC = ^UIViewController * _Nonnull{
-        return [iOS11AdaptVC new];
+        return [iOSAdaptVC new];
     };
     [list addObject:ios11];
     

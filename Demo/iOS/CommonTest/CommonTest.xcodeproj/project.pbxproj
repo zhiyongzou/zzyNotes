@@ -14,8 +14,8 @@
 		814924B4265D48200050A1A1 /* NSTimer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814924B3265D48200050A1A1 /* NSTimer+Extension.m */; };
 		815162CB2634546F004F0DD7 /* StringToIntTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 815162C92634546F004F0DD7 /* StringToIntTest.m */; };
 		815162CC2634546F004F0DD7 /* StringToIntTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815162CA2634546F004F0DD7 /* StringToIntTest.xib */; };
-		815C806F2676F0A6002741DD /* iOS11AdaptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 815C806D2676F0A5002741DD /* iOS11AdaptVC.m */; };
-		815C80702676F0A6002741DD /* iOS11AdaptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815C806E2676F0A5002741DD /* iOS11AdaptVC.xib */; };
+		815C806F2676F0A6002741DD /* iOSAdaptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 815C806D2676F0A5002741DD /* iOSAdaptVC.m */; };
+		815C80702676F0A6002741DD /* iOSAdaptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815C806E2676F0A5002741DD /* iOSAdaptVC.xib */; };
 		815C80822676FBD5002741DD /* BlurEffectTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 815C80802676FBD5002741DD /* BlurEffectTestVC.m */; };
 		815C80832676FBD5002741DD /* BlurEffectTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815C80812676FBD5002741DD /* BlurEffectTestVC.xib */; };
 		816696312601E48E0045B6F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 816696302601E48E0045B6F1 /* AppDelegate.m */; };
@@ -82,9 +82,9 @@
 		815162C82634546F004F0DD7 /* StringToIntTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringToIntTest.h; sourceTree = "<group>"; };
 		815162C92634546F004F0DD7 /* StringToIntTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringToIntTest.m; sourceTree = "<group>"; };
 		815162CA2634546F004F0DD7 /* StringToIntTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringToIntTest.xib; sourceTree = "<group>"; };
-		815C806C2676F0A5002741DD /* iOS11AdaptVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS11AdaptVC.h; sourceTree = "<group>"; };
-		815C806D2676F0A5002741DD /* iOS11AdaptVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS11AdaptVC.m; sourceTree = "<group>"; };
-		815C806E2676F0A5002741DD /* iOS11AdaptVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iOS11AdaptVC.xib; sourceTree = "<group>"; };
+		815C806C2676F0A5002741DD /* iOSAdaptVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSAdaptVC.h; sourceTree = "<group>"; };
+		815C806D2676F0A5002741DD /* iOSAdaptVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSAdaptVC.m; sourceTree = "<group>"; };
+		815C806E2676F0A5002741DD /* iOSAdaptVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iOSAdaptVC.xib; sourceTree = "<group>"; };
 		815C807F2676FBD5002741DD /* BlurEffectTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlurEffectTestVC.h; sourceTree = "<group>"; };
 		815C80802676FBD5002741DD /* BlurEffectTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurEffectTestVC.m; sourceTree = "<group>"; };
 		815C80812676FBD5002741DD /* BlurEffectTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlurEffectTestVC.xib; sourceTree = "<group>"; };
@@ -248,9 +248,9 @@
 				819D013A26705E0500F3E576 /* GradientTestVC.h */,
 				819D013B26705E0500F3E576 /* GradientTestVC.m */,
 				819D013C26705E0500F3E576 /* GradientTestVC.xib */,
-				815C806C2676F0A5002741DD /* iOS11AdaptVC.h */,
-				815C806D2676F0A5002741DD /* iOS11AdaptVC.m */,
-				815C806E2676F0A5002741DD /* iOS11AdaptVC.xib */,
+				815C806C2676F0A5002741DD /* iOSAdaptVC.h */,
+				815C806D2676F0A5002741DD /* iOSAdaptVC.m */,
+				815C806E2676F0A5002741DD /* iOSAdaptVC.xib */,
 				815C807F2676FBD5002741DD /* BlurEffectTestVC.h */,
 				815C80802676FBD5002741DD /* BlurEffectTestVC.m */,
 				815C80812676FBD5002741DD /* BlurEffectTestVC.xib */,
@@ -454,7 +454,7 @@
 				819D013E26705E0500F3E576 /* GradientTestVC.xib in Resources */,
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				81FCDF9426458D37009312F1 /* TimerLeakVC.xib in Resources */,
-				815C80702676F0A6002741DD /* iOS11AdaptVC.xib in Resources */,
+				815C80702676F0A6002741DD /* iOSAdaptVC.xib in Resources */,
 				815C80832676FBD5002741DD /* BlurEffectTestVC.xib in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
 				8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */,
@@ -505,7 +505,7 @@
 				8174F0C526589E7A008F06D7 /* ShiftOperatorVC.m in Sources */,
 				818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */,
 				816698E22608CC670045B6F1 /* VCCell.m in Sources */,
-				815C806F2676F0A6002741DD /* iOS11AdaptVC.m in Sources */,
+				815C806F2676F0A6002741DD /* iOSAdaptVC.m in Sources */,
 				814924B4265D48200050A1A1 /* NSTimer+Extension.m in Sources */,
 				816696422601E4900045B6F1 /* main.m in Sources */,
 				819D013D26705E0500F3E576 /* GradientTestVC.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  iOS11AdaptVC.h
+//  iOSAdaptVC.h
 //  CommonTest
 //
 //  Created by zzyong on 2021/6/14.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface iOS11AdaptVC : UIViewController
+@interface iOSAdaptVC : UIViewController
 
 @end
 
