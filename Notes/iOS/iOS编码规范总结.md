@@ -293,7 +293,7 @@ if (view.window) {
 ```
 	
 ### @[ ] 与 @{ } 注意空异常
-使用 **@[ ]** 和 **@{ }** 创建集合对象时要确保容器内的 object 和 key 不为空。曾经遇到过 imageWithName: 返回为空导致的崩溃。
+使用 **@[ ]** 和 **@{ }** 创建集合对象时要确保容器内的 object 和 key 不为空。曾经遇到过 `imageWithName:` 返回为空导致的崩溃。
 
 ```objc
 // 不推荐
@@ -308,7 +308,7 @@ if (view.window) {
 	
 ### 复杂视图应该遵循的 3 个原则
 
-1. 应该继承 UIView，而不是 UICollectionViewCell 或者 UITableViewCell等特定类。这样有利于项目其他模块复用
+1. 应该继承 UIView，而不是 UICollectionViewCell 或者 UITableViewCell 等特定类。这样有利于项目其他模块复用
 
 2. 如果视图层级过于复杂，建议将视图进行分层，例如分为：top / middle / bottom，这样不仅使得视图的层级结构更加清晰，而且有利于问题定位
 
@@ -620,8 +620,8 @@ self.titleLabel.frame = CGRectIntegral(CGRectMake(6, 6, title_w, 6));
 @end
 ```
 
-### 对象初始化依赖多个参数时避免多属性赋值
-如果创建一个对象需要调用者传多个参数进行初始化时，此时最好不要使用**多属性赋值**，而是封装成一个方法给调用者，这样可以避免属性赋值顺序等问题。这里强调 `初始化`，一些特定的属性值更新除外 
+### 对象内部处理属性（变量）之间的依赖关系，避免依赖外部属性更新顺序
+如果一个对象的多个属性之间有依赖关系，此时最好不要依赖外部属性更新顺序，因为万一其他人使用到该对象就很容易出问题。而是封装成一个方法给调用者，直接在内部处理其依赖关系。
 
 ```objc
 @interface MyView : UIView
@@ -635,11 +635,24 @@ MyView *my = [MyView new];
 my.title = @"";
 my.type = 0;
 my.topMargin = 0;
+
+// 例如要求必须先设置 type 才能确定 topMargin。如果是外部结局的话，那就没次使用时必须注意 type 要在 topMargin 前赋值
+// 下面顺序会导致视图表现异常
+my.topMargin = 0; 
+my.type = 0;
 	
 // 推荐
+// 将外部的 3 个属性隐藏在内部，只能通过此方法进行更新
+// 如果一定要通过属性赋值更新的话，那就只能重写 setter 方法来处理属性之间的依赖关系
+// 具体要使用哪种方式可以根据具体情况具体分析
 - (void)setTitle:(NSString *)title
             type:(int)type
-       topMargin:(CGFloat) topMargin;
+       topMargin:(CGFloat) topMargin 
+{
+    self.title = @"";
+    self.type = 0;
+    self.topMargin = 0;
+}
 	
 @end
 ```
