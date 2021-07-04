@@ -20,12 +20,20 @@
 #import "ShiftOperatorVC.h"
 #import "iOSAdaptVC.h"
 #import "BlurEffectTestVC.h"
+#import "LockTestVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *lock = [VCModel new];
+    lock.title = @"iOS Lock";
+    lock.targetVC = ^UIViewController * _Nonnull{
+        return [LockTestVC new];
+    };
+    [list addObject:lock];
     
     VCModel *blurEffec = [VCModel new];
     blurEffec.title = @"iOS10 UIBlurEffec Disable By Mask";

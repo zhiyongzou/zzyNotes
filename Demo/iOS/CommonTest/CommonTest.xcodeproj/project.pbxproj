@@ -42,6 +42,8 @@
 		818171BD2627441F00D0A7C8 /* AutoreleaseTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171BB2627441F00D0A7C8 /* AutoreleaseTestVC.m */; };
 		818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */; };
 		818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171C42627467400D0A7C8 /* UIBlockObserver.m */; };
+		8183AFC926909E0000758845 /* LockTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183AFC726909E0000758845 /* LockTestVC.m */; };
+		8183AFCA26909E0000758845 /* LockTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8183AFC826909E0000758845 /* LockTestVC.xib */; };
 		819D013D26705E0500F3E576 /* GradientTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D013B26705E0500F3E576 /* GradientTestVC.m */; };
 		819D013E26705E0500F3E576 /* GradientTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819D013C26705E0500F3E576 /* GradientTestVC.xib */; };
 		819D01412670648600F3E576 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D01402670648600F3E576 /* UIView+Frame.m */; };
@@ -133,6 +135,9 @@
 		818171BC2627441F00D0A7C8 /* AutoreleaseTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoreleaseTestVC.xib; sourceTree = "<group>"; };
 		818171C32627467400D0A7C8 /* UIBlockObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBlockObserver.h; sourceTree = "<group>"; };
 		818171C42627467400D0A7C8 /* UIBlockObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBlockObserver.m; sourceTree = "<group>"; };
+		8183AFC626909E0000758845 /* LockTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockTestVC.h; sourceTree = "<group>"; };
+		8183AFC726909E0000758845 /* LockTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockTestVC.m; sourceTree = "<group>"; };
+		8183AFC826909E0000758845 /* LockTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockTestVC.xib; sourceTree = "<group>"; };
 		819D013A26705E0500F3E576 /* GradientTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientTestVC.h; sourceTree = "<group>"; };
 		819D013B26705E0500F3E576 /* GradientTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientTestVC.m; sourceTree = "<group>"; };
 		819D013C26705E0500F3E576 /* GradientTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientTestVC.xib; sourceTree = "<group>"; };
@@ -245,15 +250,9 @@
 			isa = PBXGroup;
 			children = (
 				816F916C2650EF8B00E385FE /* PreVCS */,
-				819D013A26705E0500F3E576 /* GradientTestVC.h */,
-				819D013B26705E0500F3E576 /* GradientTestVC.m */,
-				819D013C26705E0500F3E576 /* GradientTestVC.xib */,
-				815C806C2676F0A5002741DD /* iOSAdaptVC.h */,
-				815C806D2676F0A5002741DD /* iOSAdaptVC.m */,
-				815C806E2676F0A5002741DD /* iOSAdaptVC.xib */,
-				815C807F2676FBD5002741DD /* BlurEffectTestVC.h */,
-				815C80802676FBD5002741DD /* BlurEffectTestVC.m */,
-				815C80812676FBD5002741DD /* BlurEffectTestVC.xib */,
+				8183AFC626909E0000758845 /* LockTestVC.h */,
+				8183AFC726909E0000758845 /* LockTestVC.m */,
+				8183AFC826909E0000758845 /* LockTestVC.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -292,6 +291,15 @@
 		816F916C2650EF8B00E385FE /* PreVCS */ = {
 			isa = PBXGroup;
 			children = (
+				819D013A26705E0500F3E576 /* GradientTestVC.h */,
+				819D013B26705E0500F3E576 /* GradientTestVC.m */,
+				819D013C26705E0500F3E576 /* GradientTestVC.xib */,
+				815C806C2676F0A5002741DD /* iOSAdaptVC.h */,
+				815C806D2676F0A5002741DD /* iOSAdaptVC.m */,
+				815C806E2676F0A5002741DD /* iOSAdaptVC.xib */,
+				815C807F2676FBD5002741DD /* BlurEffectTestVC.h */,
+				815C80802676FBD5002741DD /* BlurEffectTestVC.m */,
+				815C80812676FBD5002741DD /* BlurEffectTestVC.xib */,
 				8174F0C226589E7A008F06D7 /* ShiftOperatorVC.h */,
 				8174F0C326589E7A008F06D7 /* ShiftOperatorVC.m */,
 				8174F0C426589E7A008F06D7 /* ShiftOperatorVC.xib */,
@@ -454,6 +462,7 @@
 				819D013E26705E0500F3E576 /* GradientTestVC.xib in Resources */,
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				81FCDF9426458D37009312F1 /* TimerLeakVC.xib in Resources */,
+				8183AFCA26909E0000758845 /* LockTestVC.xib in Resources */,
 				815C80702676F0A6002741DD /* iOSAdaptVC.xib in Resources */,
 				815C80832676FBD5002741DD /* BlurEffectTestVC.xib in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
@@ -508,6 +517,7 @@
 				815C806F2676F0A6002741DD /* iOSAdaptVC.m in Sources */,
 				814924B4265D48200050A1A1 /* NSTimer+Extension.m in Sources */,
 				816696422601E4900045B6F1 /* main.m in Sources */,
+				8183AFC926909E0000758845 /* LockTestVC.m in Sources */,
 				819D013D26705E0500F3E576 /* GradientTestVC.m in Sources */,
 				815162CB2634546F004F0DD7 /* StringToIntTest.m in Sources */,
 				81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */,
