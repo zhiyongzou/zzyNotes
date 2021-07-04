@@ -21,12 +21,20 @@
 #import "iOSAdaptVC.h"
 #import "BlurEffectTestVC.h"
 #import "LockTestVC.h"
+#import "GCDTestVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *gcd = [VCModel new];
+    gcd.title = @"GCD Test";
+    gcd.targetVC = ^UIViewController * _Nonnull{
+        return [GCDTestVC new];
+    };
+    [list addObject:gcd];
     
     VCModel *lock = [VCModel new];
     lock.title = @"iOS Lock";

@@ -44,6 +44,8 @@
 		818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171C42627467400D0A7C8 /* UIBlockObserver.m */; };
 		8183AFC926909E0000758845 /* LockTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183AFC726909E0000758845 /* LockTestVC.m */; };
 		8183AFCA26909E0000758845 /* LockTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8183AFC826909E0000758845 /* LockTestVC.xib */; };
+		8183AFD42691EFF900758845 /* GCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183AFD22691EFF900758845 /* GCDTestVC.m */; };
+		8183AFD52691EFF900758845 /* GCDTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8183AFD32691EFF900758845 /* GCDTestVC.xib */; };
 		819D013D26705E0500F3E576 /* GradientTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D013B26705E0500F3E576 /* GradientTestVC.m */; };
 		819D013E26705E0500F3E576 /* GradientTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819D013C26705E0500F3E576 /* GradientTestVC.xib */; };
 		819D01412670648600F3E576 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D01402670648600F3E576 /* UIView+Frame.m */; };
@@ -138,6 +140,9 @@
 		8183AFC626909E0000758845 /* LockTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockTestVC.h; sourceTree = "<group>"; };
 		8183AFC726909E0000758845 /* LockTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockTestVC.m; sourceTree = "<group>"; };
 		8183AFC826909E0000758845 /* LockTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockTestVC.xib; sourceTree = "<group>"; };
+		8183AFD12691EFF900758845 /* GCDTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestVC.h; sourceTree = "<group>"; };
+		8183AFD22691EFF900758845 /* GCDTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestVC.m; sourceTree = "<group>"; };
+		8183AFD32691EFF900758845 /* GCDTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDTestVC.xib; sourceTree = "<group>"; };
 		819D013A26705E0500F3E576 /* GradientTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientTestVC.h; sourceTree = "<group>"; };
 		819D013B26705E0500F3E576 /* GradientTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientTestVC.m; sourceTree = "<group>"; };
 		819D013C26705E0500F3E576 /* GradientTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientTestVC.xib; sourceTree = "<group>"; };
@@ -250,9 +255,9 @@
 			isa = PBXGroup;
 			children = (
 				816F916C2650EF8B00E385FE /* PreVCS */,
-				8183AFC626909E0000758845 /* LockTestVC.h */,
-				8183AFC726909E0000758845 /* LockTestVC.m */,
-				8183AFC826909E0000758845 /* LockTestVC.xib */,
+				8183AFD12691EFF900758845 /* GCDTestVC.h */,
+				8183AFD22691EFF900758845 /* GCDTestVC.m */,
+				8183AFD32691EFF900758845 /* GCDTestVC.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -291,6 +296,9 @@
 		816F916C2650EF8B00E385FE /* PreVCS */ = {
 			isa = PBXGroup;
 			children = (
+				8183AFC626909E0000758845 /* LockTestVC.h */,
+				8183AFC726909E0000758845 /* LockTestVC.m */,
+				8183AFC826909E0000758845 /* LockTestVC.xib */,
 				819D013A26705E0500F3E576 /* GradientTestVC.h */,
 				819D013B26705E0500F3E576 /* GradientTestVC.m */,
 				819D013C26705E0500F3E576 /* GradientTestVC.xib */,
@@ -462,6 +470,7 @@
 				819D013E26705E0500F3E576 /* GradientTestVC.xib in Resources */,
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				81FCDF9426458D37009312F1 /* TimerLeakVC.xib in Resources */,
+				8183AFD52691EFF900758845 /* GCDTestVC.xib in Resources */,
 				8183AFCA26909E0000758845 /* LockTestVC.xib in Resources */,
 				815C80702676F0A6002741DD /* iOSAdaptVC.xib in Resources */,
 				815C80832676FBD5002741DD /* BlurEffectTestVC.xib in Resources */,
@@ -503,6 +512,7 @@
 				815C80822676FBD5002741DD /* BlurEffectTestVC.m in Sources */,
 				81FCDF9326458D37009312F1 /* TimerLeakVC.m in Sources */,
 				81470913262A8CD200E48D71 /* MRCTestVC.m in Sources */,
+				8183AFD42691EFF900758845 /* GCDTestVC.m in Sources */,
 				818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */,
 				8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */,
 				819D01412670648600F3E576 /* UIView+Frame.m in Sources */,
