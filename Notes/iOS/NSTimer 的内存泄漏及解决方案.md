@@ -62,7 +62,7 @@
 
 你会发现，上面只是打印出了：`-[TimerLeakVC timerInOtherThread]...`，这是为什么呢？那是因为**只有把定时器加到运行循环，它才可以正常触发任务**。
 
-至此我们知道**定时器（Timer）**也会被**主运行循环（Main Run Loop）**持有。
+至此我们知道 **定时器（Timer）** 也会被 **主运行循环（Main Run Loop）** 持有。
 
 但是我们用的是 __weak target，理论上应该是不会强引用目标对象，这是为什么呢？我们看看官方文档对 target 参数描述如下：
 > The object to which to send the message specified by aSelector when the timer fires. The timer maintains a strong reference to target until it (the timer) is invalidated.
