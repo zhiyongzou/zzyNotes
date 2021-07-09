@@ -22,12 +22,20 @@
 #import "BlurEffectTestVC.h"
 #import "LockTestVC.h"
 #import "GCDTestVC.h"
+#import "KVOTestVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *kvo = [VCModel new];
+    kvo.title = @"KVO Test";
+    kvo.targetVC = ^UIViewController * _Nonnull{
+        return [KVOTestVC new];
+    };
+    [list addObject:kvo];
     
     VCModel *gcd = [VCModel new];
     gcd.title = @"GCD Test";
