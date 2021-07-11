@@ -23,12 +23,20 @@
 #import "LockTestVC.h"
 #import "GCDTestVC.h"
 #import "KVOTestVC.h"
+#import "NSStringVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *str = [VCModel new];
+    str.title = @"NSString Test";
+    str.targetVC = ^UIViewController * _Nonnull{
+        return [NSStringVC new];
+    };
+    [list addObject:str];
     
     VCModel *kvo = [VCModel new];
     kvo.title = @"KVO Test";
