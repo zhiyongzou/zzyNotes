@@ -126,7 +126,7 @@
 > Gesture recognizers receive touch and press events before their view does. If a view's gesture recognizers fail to recognize a sequence of touches, UIKit sends the touches to the view. If the view does not handle the touches, UIKit passes them up the responder chain
 
 
-2、双击手势会将 touch event 挂起一段时间（时间大概在**300 ~ 400ms**之间）用来分析其是否位双击事件，只有手势分析触摸事件结束之后才将挂起的 touch event 传给 View。此外， **`UIGestureRecognizer`** 的 **`delaysTouchesEnded`** 属性说明了一切
+2、双击手势会将 touch event 挂起一段时间（时间大概在**300 ~ 400ms**之间）用来分析其是否为双击事件，只有手势分析触摸事件结束之后才将挂起的 touch event 传给 View。此外， **`UIGestureRecognizer`** 的 **`delaysTouchesEnded`** 属性说明了一切
 
 > default is YES. causes touchesEnded or pressesEnded events to be delivered to the target view only after this gesture has failed recognition. this ensures that a touch or press that is part of the gesture can be cancelled if the gesture is recognized
 
