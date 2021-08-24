@@ -1,18 +1,35 @@
 PODS:
+  - Protobuf (3.14.0)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
+  - SSZipArchive (2.2.3)
+  - SVGAPlayer (2.5.7):
+    - SVGAPlayer/Core (= 2.5.7)
+    - SVGAPlayer/ProtoFiles (= 2.5.7)
+  - SVGAPlayer/Core (2.5.7):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.5.7):
+    - Protobuf (~> 3.4)
 
 DEPENDENCIES:
   - SDWebImage
+  - SVGAPlayer
 
 SPEC REPOS:
   trunk:
+    - Protobuf
     - SDWebImage
+    - SSZipArchive
+    - SVGAPlayer
 
 SPEC CHECKSUMS:
+  Protobuf: 0cde852566359049847168e51bd1c690e0f70056
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
 
-PODFILE CHECKSUM: 0eb41cb7c15c8ec8adc40130273aa622e14cae42
+PODFILE CHECKSUM: f3f62f2a82bc0923cbd266629de9ee1e64f5f8d2
 
 COCOAPODS: 1.9.3

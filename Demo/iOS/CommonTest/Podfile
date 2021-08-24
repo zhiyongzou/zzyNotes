@@ -4,6 +4,7 @@ target 'CommonTest' do
 
 
 pod 'SDWebImage'
+pod 'SVGAPlayer'
 
 
 end
