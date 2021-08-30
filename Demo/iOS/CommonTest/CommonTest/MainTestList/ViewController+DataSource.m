@@ -23,6 +23,7 @@
 #import "LockTestVC.h"
 #import "GCDTestVC.h"
 #import "KVOTestVC.h"
+#import "SVGATestVC.h"
 #import "NSStringVC.h"
 
 @implementation ViewController (DataSource)
@@ -30,6 +31,13 @@
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *svga = [VCModel new];
+    svga.title = @"SVGA Test";
+    svga.targetVC = ^UIViewController * _Nonnull{
+        return [SVGATestVC new];
+    };
+    [list addObject:svga];
     
     VCModel *str = [VCModel new];
     str.title = @"NSString Test";
