@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import <sys/sysctl.h>
+#import <mach/mach.h>
 
 @interface AppDelegate ()
 
@@ -25,16 +26,15 @@ __attribute__((constructor)) static void beforeMain() {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSLog(@"%@", @([self.class processStartTime]));
-    
     return YES;
 }
 
-+ (NSTimeInterval)processStartTime {   // 单位是毫秒
+/// 单位：毫秒
++ (NSTimeInterval)processStartTime
+{
     struct kinfo_proc kProcInfo;
     if ([self processInfoForPID:[[NSProcessInfo processInfo] processIdentifier] procInfo:&kProcInfo]) {
         return kProcInfo.kp_proc.p_un.__p_starttime.tv_sec * 1000.0 + kProcInfo.kp_proc.p_un.__p_starttime.tv_usec / 1000.0;
-        
     } else {
         NSAssert(NO, @"无法取得进程的信息");
         return 0;
@@ -46,7 +46,6 @@ __attribute__((constructor)) static void beforeMain() {
     size_t size = sizeof(*procInfo);
     return sysctl(cmd, sizeof(cmd)/sizeof(*cmd), procInfo, &size, NULL, 0) == 0;
 }
-
 
 #pragma mark - UISceneSession lifecycle
 

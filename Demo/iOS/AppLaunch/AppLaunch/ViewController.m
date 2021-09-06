@@ -9,6 +9,14 @@
 
 extern CFAbsoluteTime kAppStartTimeAfterMain;
 
+static int x __attribute__((used,section("__DATA,__mysection"))) = 4;
+static int y __attribute__((used,section("__DATA,__mysection"))) = 10;
+static int z __attribute__((used,section("__DATA,__mysection"))) = 22;
+
+static void __attribute__((used,section("__DATA,__mysection"))) functionA(void) {
+
+}
+
 @interface ViewController ()
 
 @end

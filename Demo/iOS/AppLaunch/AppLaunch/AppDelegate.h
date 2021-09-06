@@ -9,6 +9,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
++ (NSTimeInterval)processStartTime;
 
 @end
 
