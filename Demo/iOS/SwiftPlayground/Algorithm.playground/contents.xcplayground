@@ -4,5 +4,6 @@
         <page name='MainPage'/>
         <page name='QuickSort'/>
         <page name='BubbleSort'/>
+        <page name='LeetCode'/>
     </pages>
 </playground>
