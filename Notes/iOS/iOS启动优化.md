@@ -1,2 +1,3 @@
 - [美团外卖iOS App冷启动治理](https://tech.meituan.com/2018/12/06/waimai-ios-optimizing-startup.html)
 - [objc_cover](https://github.com/nst/objc_cover)
+- [Reducing Your App’s Launch Time](https://developer.apple.com/documentation/xcode/reducing-your-app-s-launch-time)
