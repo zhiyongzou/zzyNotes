@@ -10,6 +10,9 @@
 		7B72F757042739AFA1079A16 /* libPods-CommonTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850E83ED3E086094E7876CB /* libPods-CommonTest.a */; };
 		812AEBE3269844F700ADBECD /* KVOTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 812AEBE1269844F700ADBECD /* KVOTestVC.m */; };
 		812AEBE4269844F700ADBECD /* KVOTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812AEBE2269844F700ADBECD /* KVOTestVC.xib */; };
+		8142DB2B26EE033F0000DC1C /* CTOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142DB2A26EE033F0000DC1C /* CTOperation.m */; };
+		8142DB3526EE04B00000DC1C /* GCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142DB3326EE04B00000DC1C /* GCDTestVC.m */; };
+		8142DB3626EE04B00000DC1C /* GCDTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8142DB3426EE04B00000DC1C /* GCDTestVC.xib */; };
 		81470913262A8CD200E48D71 /* MRCTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81470911262A8CD200E48D71 /* MRCTestVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		81470914262A8CD200E48D71 /* MRCTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81470912262A8CD200E48D71 /* MRCTestVC.xib */; };
 		8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8147099D262B0B2D00E48D71 /* ARCTestVC.m */; };
@@ -49,8 +52,6 @@
 		818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 818171C42627467400D0A7C8 /* UIBlockObserver.m */; };
 		8183AFC926909E0000758845 /* LockTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183AFC726909E0000758845 /* LockTestVC.m */; };
 		8183AFCA26909E0000758845 /* LockTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8183AFC826909E0000758845 /* LockTestVC.xib */; };
-		8183AFD42691EFF900758845 /* GCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8183AFD22691EFF900758845 /* GCDTestVC.m */; };
-		8183AFD52691EFF900758845 /* GCDTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8183AFD32691EFF900758845 /* GCDTestVC.xib */; };
 		819B09F226D49AD90009B7A7 /* SVGATestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 819B09F026D49AD90009B7A7 /* SVGATestVC.m */; };
 		819B09F326D49AD90009B7A7 /* SVGATestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819B09F126D49AD90009B7A7 /* SVGATestVC.xib */; };
 		819B09F926D4A0070009B7A7 /* effect.svga in Resources */ = {isa = PBXBuildFile; fileRef = 819B09F626D4A0070009B7A7 /* effect.svga */; };
@@ -90,6 +91,11 @@
 		812AEBE0269844F700ADBECD /* KVOTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestVC.h; sourceTree = "<group>"; };
 		812AEBE1269844F700ADBECD /* KVOTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestVC.m; sourceTree = "<group>"; };
 		812AEBE2269844F700ADBECD /* KVOTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVOTestVC.xib; sourceTree = "<group>"; };
+		8142DB2926EE033F0000DC1C /* CTOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTOperation.h; sourceTree = "<group>"; };
+		8142DB2A26EE033F0000DC1C /* CTOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTOperation.m; sourceTree = "<group>"; };
+		8142DB3226EE04B00000DC1C /* GCDTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestVC.h; sourceTree = "<group>"; };
+		8142DB3326EE04B00000DC1C /* GCDTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestVC.m; sourceTree = "<group>"; };
+		8142DB3426EE04B00000DC1C /* GCDTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDTestVC.xib; sourceTree = "<group>"; };
 		81470910262A8CD200E48D71 /* MRCTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCTestVC.h; sourceTree = "<group>"; };
 		81470911262A8CD200E48D71 /* MRCTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCTestVC.m; sourceTree = "<group>"; };
 		81470912262A8CD200E48D71 /* MRCTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MRCTestVC.xib; sourceTree = "<group>"; };
@@ -158,9 +164,6 @@
 		8183AFC626909E0000758845 /* LockTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockTestVC.h; sourceTree = "<group>"; };
 		8183AFC726909E0000758845 /* LockTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockTestVC.m; sourceTree = "<group>"; };
 		8183AFC826909E0000758845 /* LockTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LockTestVC.xib; sourceTree = "<group>"; };
-		8183AFD12691EFF900758845 /* GCDTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestVC.h; sourceTree = "<group>"; };
-		8183AFD22691EFF900758845 /* GCDTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestVC.m; sourceTree = "<group>"; };
-		8183AFD32691EFF900758845 /* GCDTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDTestVC.xib; sourceTree = "<group>"; };
 		819B09EF26D49AD90009B7A7 /* SVGATestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVGATestVC.h; sourceTree = "<group>"; };
 		819B09F026D49AD90009B7A7 /* SVGATestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVGATestVC.m; sourceTree = "<group>"; };
 		819B09F126D49AD90009B7A7 /* SVGATestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVGATestVC.xib; sourceTree = "<group>"; };
@@ -212,6 +215,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8142DB2826EE030D0000DC1C /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				8142DB3226EE04B00000DC1C /* GCDTestVC.h */,
+				8142DB3326EE04B00000DC1C /* GCDTestVC.m */,
+				8142DB3426EE04B00000DC1C /* GCDTestVC.xib */,
+				8142DB2926EE033F0000DC1C /* CTOperation.h */,
+				8142DB2A26EE033F0000DC1C /* CTOperation.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		814708FF262A8C0100E48D71 /* MainTestList */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,11 +298,9 @@
 		816696C22601F5F00045B6F1 /* TestVcs */ = {
 			isa = PBXGroup;
 			children = (
+				8142DB2826EE030D0000DC1C /* GCD */,
 				819B09EE26D49A910009B7A7 /* Temp */,
 				816F916C2650EF8B00E385FE /* PreVCS */,
-				8183AFD12691EFF900758845 /* GCDTestVC.h */,
-				8183AFD22691EFF900758845 /* GCDTestVC.m */,
-				8183AFD32691EFF900758845 /* GCDTestVC.xib */,
 				812AEBE0269844F700ADBECD /* KVOTestVC.h */,
 				812AEBE1269844F700ADBECD /* KVOTestVC.m */,
 				812AEBE2269844F700ADBECD /* KVOTestVC.xib */,
@@ -548,12 +561,12 @@
 				8166963F2601E4900045B6F1 /* LaunchScreen.storyboard in Resources */,
 				817B16FB269B32590025F18C /* NSStringVC.xib in Resources */,
 				81FCDF9426458D37009312F1 /* TimerLeakVC.xib in Resources */,
-				8183AFD52691EFF900758845 /* GCDTestVC.xib in Resources */,
 				819B09F926D4A0070009B7A7 /* effect.svga in Resources */,
 				8183AFCA26909E0000758845 /* LockTestVC.xib in Resources */,
 				815C80702676F0A6002741DD /* iOSAdaptVC.xib in Resources */,
 				815C80832676FBD5002741DD /* BlurEffectTestVC.xib in Resources */,
 				812AEBE4269844F700ADBECD /* KVOTestVC.xib in Resources */,
+				8142DB3626EE04B00000DC1C /* GCDTestVC.xib in Resources */,
 				8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */,
 				8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */,
 				818171BE2627441F00D0A7C8 /* AutoreleaseTestVC.xib in Resources */,
@@ -619,10 +632,11 @@
 				815C80822676FBD5002741DD /* BlurEffectTestVC.m in Sources */,
 				81FCDF9326458D37009312F1 /* TimerLeakVC.m in Sources */,
 				81470913262A8CD200E48D71 /* MRCTestVC.m in Sources */,
-				8183AFD42691EFF900758845 /* GCDTestVC.m in Sources */,
+				8142DB2B26EE033F0000DC1C /* CTOperation.m in Sources */,
 				818171C52627467400D0A7C8 /* UIBlockObserver.m in Sources */,
 				8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */,
 				819D01412670648600F3E576 /* UIView+Frame.m in Sources */,
+				8142DB3526EE04B00000DC1C /* GCDTestVC.m in Sources */,
 				816696312601E48E0045B6F1 /* AppDelegate.m in Sources */,
 				816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */,
 				816F91782650F22700E385FE /* UIColor+Extension.m in Sources */,
