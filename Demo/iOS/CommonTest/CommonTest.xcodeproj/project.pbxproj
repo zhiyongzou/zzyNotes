@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7B72F757042739AFA1079A16 /* libPods-CommonTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2850E83ED3E086094E7876CB /* libPods-CommonTest.a */; };
+		81088BA826FC68FB009E8747 /* CategoryTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81088BA726FC68FB009E8747 /* CategoryTestVC.m */; };
+		81088BB126FC692B009E8747 /* CategoryTestVC+Category1.m in Sources */ = {isa = PBXBuildFile; fileRef = 81088BB026FC692B009E8747 /* CategoryTestVC+Category1.m */; };
+		81088BB726FC6935009E8747 /* CategoryTestVC+Category2.m in Sources */ = {isa = PBXBuildFile; fileRef = 81088BB626FC6935009E8747 /* CategoryTestVC+Category2.m */; };
 		812AEBE3269844F700ADBECD /* KVOTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 812AEBE1269844F700ADBECD /* KVOTestVC.m */; };
 		812AEBE4269844F700ADBECD /* KVOTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812AEBE2269844F700ADBECD /* KVOTestVC.xib */; };
 		8142DB2B26EE033F0000DC1C /* CTOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142DB2A26EE033F0000DC1C /* CTOperation.m */; };
@@ -88,6 +91,12 @@
 /* Begin PBXFileReference section */
 		2850E83ED3E086094E7876CB /* libPods-CommonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A03FCD2B2ABBD7AB4BD4332 /* Pods-CommonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTest.release.xcconfig"; path = "Target Support Files/Pods-CommonTest/Pods-CommonTest.release.xcconfig"; sourceTree = "<group>"; };
+		81088BA626FC68FB009E8747 /* CategoryTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryTestVC.h; sourceTree = "<group>"; };
+		81088BA726FC68FB009E8747 /* CategoryTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTestVC.m; sourceTree = "<group>"; };
+		81088BAF26FC692B009E8747 /* CategoryTestVC+Category1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryTestVC+Category1.h"; sourceTree = "<group>"; };
+		81088BB026FC692B009E8747 /* CategoryTestVC+Category1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryTestVC+Category1.m"; sourceTree = "<group>"; };
+		81088BB526FC6935009E8747 /* CategoryTestVC+Category2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryTestVC+Category2.h"; sourceTree = "<group>"; };
+		81088BB626FC6935009E8747 /* CategoryTestVC+Category2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryTestVC+Category2.m"; sourceTree = "<group>"; };
 		812AEBE0269844F700ADBECD /* KVOTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestVC.h; sourceTree = "<group>"; };
 		812AEBE1269844F700ADBECD /* KVOTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestVC.m; sourceTree = "<group>"; };
 		812AEBE2269844F700ADBECD /* KVOTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVOTestVC.xib; sourceTree = "<group>"; };
@@ -215,6 +224,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81088BA526FC68B3009E8747 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				81088BA626FC68FB009E8747 /* CategoryTestVC.h */,
+				81088BA726FC68FB009E8747 /* CategoryTestVC.m */,
+				81088BAF26FC692B009E8747 /* CategoryTestVC+Category1.h */,
+				81088BB026FC692B009E8747 /* CategoryTestVC+Category1.m */,
+				81088BB526FC6935009E8747 /* CategoryTestVC+Category2.h */,
+				81088BB626FC6935009E8747 /* CategoryTestVC+Category2.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		8142DB2826EE030D0000DC1C /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,15 +320,10 @@
 		816696C22601F5F00045B6F1 /* TestVcs */ = {
 			isa = PBXGroup;
 			children = (
+				81088BA526FC68B3009E8747 /* Category */,
 				8142DB2826EE030D0000DC1C /* GCD */,
 				819B09EE26D49A910009B7A7 /* Temp */,
 				816F916C2650EF8B00E385FE /* PreVCS */,
-				812AEBE0269844F700ADBECD /* KVOTestVC.h */,
-				812AEBE1269844F700ADBECD /* KVOTestVC.m */,
-				812AEBE2269844F700ADBECD /* KVOTestVC.xib */,
-				817B16F7269B32590025F18C /* NSStringVC.h */,
-				817B16F8269B32590025F18C /* NSStringVC.m */,
-				817B16F9269B32590025F18C /* NSStringVC.xib */,
 			);
 			path = TestVcs;
 			sourceTree = "<group>";
@@ -346,6 +363,12 @@
 		816F916C2650EF8B00E385FE /* PreVCS */ = {
 			isa = PBXGroup;
 			children = (
+				812AEBE0269844F700ADBECD /* KVOTestVC.h */,
+				812AEBE1269844F700ADBECD /* KVOTestVC.m */,
+				812AEBE2269844F700ADBECD /* KVOTestVC.xib */,
+				817B16F7269B32590025F18C /* NSStringVC.h */,
+				817B16F8269B32590025F18C /* NSStringVC.m */,
+				817B16F9269B32590025F18C /* NSStringVC.xib */,
 				8183AFC626909E0000758845 /* LockTestVC.h */,
 				8183AFC726909E0000758845 /* LockTestVC.m */,
 				8183AFC826909E0000758845 /* LockTestVC.xib */,
@@ -637,7 +660,10 @@
 				8147099F262B0B2D00E48D71 /* ARCTestVC.m in Sources */,
 				819D01412670648600F3E576 /* UIView+Frame.m in Sources */,
 				8142DB3526EE04B00000DC1C /* GCDTestVC.m in Sources */,
+				81088BB726FC6935009E8747 /* CategoryTestVC+Category2.m in Sources */,
+				81088BB126FC692B009E8747 /* CategoryTestVC+Category1.m in Sources */,
 				816696312601E48E0045B6F1 /* AppDelegate.m in Sources */,
+				81088BA826FC68FB009E8747 /* CategoryTestVC.m in Sources */,
 				816698E82608CC880045B6F1 /* ViewController+DataSource.m in Sources */,
 				816F91782650F22700E385FE /* UIColor+Extension.m in Sources */,
 				816698DC2608CC520045B6F1 /* VCModel.m in Sources */,

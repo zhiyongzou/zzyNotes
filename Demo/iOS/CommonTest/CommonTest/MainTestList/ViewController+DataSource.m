@@ -25,12 +25,20 @@
 #import "KVOTestVC.h"
 #import "SVGATestVC.h"
 #import "NSStringVC.h"
+#import "CategoryTestVC.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *category = [VCModel new];
+    category.title = @"Category Test";
+    category.targetVC = ^UIViewController * _Nonnull{
+        return [CategoryTestVC new];
+    };
+    [list addObject:category];
     
     VCModel *svga = [VCModel new];
     svga.title = @"SVGA Test";
