@@ -1,0 +1,1 @@
+../../../FLEX/Classes/Core/Views/Cells/FLEXSubtitleTableViewCell.h

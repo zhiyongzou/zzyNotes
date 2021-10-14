@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DebugTools' do
+
+  pod 'FLEX', :configurations => ['Debug']
+
+  target 'DebugToolsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DebugToolsUITests' do
+    # Pods for testing
+  end
+
+end

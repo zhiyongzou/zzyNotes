@@ -1,0 +1,2 @@
+- [Java Downloads](https://www.oracle.com/java/technologies/downloads/)
+- [SonarQube Documentation](https://docs.sonarqube.org/latest/)
