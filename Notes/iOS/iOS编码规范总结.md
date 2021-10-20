@@ -129,13 +129,13 @@ UIKIT_EXTERN NSNotificationName const UIApplicationDidEnterBackgroundNotificatio
 
 	
 ### block 里面的代码尽量少
-block 里面的代码尽量不要超过 5 行，最好抽成一个方法。这样可以防止遗漏 weakSlef 可能导致的循环引用问题，其次由于是弱引用，所以 weakSelf 可能随时被释放，这样还可以避免  block 里面方法调用行为不确定的问题
+block 里面的代码尽量不要超过 5 行，最好抽成一个方法。这样可以防止遗漏 weakSelf 可能导致的循环引用问题，其次由于是弱引用，所以 weakSelf 可能随时被释放，这样还可以避免  block 里面方法调用行为不确定的问题
 
 ```objc
 // 不推荐
 __weak typeof(self) weakSelf = self;
 [self queryMoreGameLivesWithCompletion:^(NSArray *rsp, BOOL success) {
-	// weakSelf 可能随时被释放，所以下面的方法调用行为是不确定
+    // weakSelf 可能随时被释放，所以下面的方法调用行为是不确定
     weakSelf.rsp = rsp;
     [weakSelf doSomething];
     [weakSelf doSomething2];
