@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		190F31EE15139298D69F1E13 /* libPods-DebugTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE58B6728D4C15F0E493ED9E /* libPods-DebugTools.a */; };
 		4F43508B542C915FB6F7DECB /* libPods-DebugTools-DebugToolsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6148EFBF1C261D7385515079 /* libPods-DebugTools-DebugToolsUITests.a */; };
+		8165ACAD2722F0BB00109B36 /* NSObject+MLWhiteList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8165ACAC2722F0BB00109B36 /* NSObject+MLWhiteList.m */; };
+		8165ACB22722F28200109B36 /* DTWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8165ACB12722F28200109B36 /* DTWindow.m */; };
+		8165ACB82722F34700109B36 /* DebugTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8165ACB72722F34700109B36 /* DebugTool.m */; };
+		8165ACBC2722FD7A00109B36 /* MLTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8165ACBB2722FD7A00109B36 /* MLTestVC.m */; };
 		81AE12F227186E8F005F176A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AE12F127186E8F005F176A /* AppDelegate.m */; };
-		81AE12F527186E8F005F176A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AE12F427186E8F005F176A /* SceneDelegate.m */; };
 		81AE12F827186E8F005F176A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AE12F727186E8F005F176A /* ViewController.m */; };
 		81AE12FB27186E8F005F176A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AE12F927186E8F005F176A /* Main.storyboard */; };
 		81AE12FD27186E90005F176A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AE12FC27186E90005F176A /* Assets.xcassets */; };
@@ -46,11 +49,17 @@
 		15C67EEE79F03BCCC3C99B7C /* Pods-DebugToolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugToolsTests.debug.xcconfig"; path = "Target Support Files/Pods-DebugToolsTests/Pods-DebugToolsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6148EFBF1C261D7385515079 /* libPods-DebugTools-DebugToolsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DebugTools-DebugToolsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC96D91817EF24C9A89A35 /* Pods-DebugTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugTools.release.xcconfig"; path = "Target Support Files/Pods-DebugTools/Pods-DebugTools.release.xcconfig"; sourceTree = "<group>"; };
+		8165ACAB2722F0BB00109B36 /* NSObject+MLWhiteList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MLWhiteList.h"; sourceTree = "<group>"; };
+		8165ACAC2722F0BB00109B36 /* NSObject+MLWhiteList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MLWhiteList.m"; sourceTree = "<group>"; };
+		8165ACB02722F28200109B36 /* DTWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTWindow.h; sourceTree = "<group>"; };
+		8165ACB12722F28200109B36 /* DTWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTWindow.m; sourceTree = "<group>"; };
+		8165ACB62722F34700109B36 /* DebugTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugTool.h; sourceTree = "<group>"; };
+		8165ACB72722F34700109B36 /* DebugTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugTool.m; sourceTree = "<group>"; };
+		8165ACBA2722FD7A00109B36 /* MLTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLTestVC.h; sourceTree = "<group>"; };
+		8165ACBB2722FD7A00109B36 /* MLTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLTestVC.m; sourceTree = "<group>"; };
 		81AE12ED27186E8F005F176A /* DebugTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AE12F027186E8F005F176A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81AE12F127186E8F005F176A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		81AE12F327186E8F005F176A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		81AE12F427186E8F005F176A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		81AE12F627186E8F005F176A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		81AE12F727186E8F005F176A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		81AE12FA27186E8F005F176A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,7 +121,6 @@
 				15C67EEE79F03BCCC3C99B7C /* Pods-DebugToolsTests.debug.xcconfig */,
 				91945EDC24248E7700701B17 /* Pods-DebugToolsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,6 +132,77 @@
 				81CE302FF58406563D6FA733 /* libPods-DebugToolsTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8165ACA92722F06A00109B36 /* DebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				8165ACAF2722F26900109B36 /* DTWindow */,
+				8165ACAA2722F07C00109B36 /* Utils */,
+				81AE13292718716A005F176A /* FPSLabel */,
+				8165ACB62722F34700109B36 /* DebugTool.h */,
+				8165ACB72722F34700109B36 /* DebugTool.m */,
+			);
+			path = DebugTool;
+			sourceTree = "<group>";
+		};
+		8165ACAA2722F07C00109B36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				81AE132627187008005F176A /* DeviceUtils.h */,
+				81AE132727187008005F176A /* DeviceUtils.m */,
+				8165ACAB2722F0BB00109B36 /* NSObject+MLWhiteList.h */,
+				8165ACAC2722F0BB00109B36 /* NSObject+MLWhiteList.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8165ACAE2722F0C800109B36 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				81AE130227186E90005F176A /* main.m */,
+				81AE12F027186E8F005F176A /* AppDelegate.h */,
+				81AE12F127186E8F005F176A /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8165ACAF2722F26900109B36 /* DTWindow */ = {
+			isa = PBXGroup;
+			children = (
+				8165ACB02722F28200109B36 /* DTWindow.h */,
+				8165ACB12722F28200109B36 /* DTWindow.m */,
+			);
+			path = DTWindow;
+			sourceTree = "<group>";
+		};
+		8165ACB32722F2E800109B36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81AE12F927186E8F005F176A /* Main.storyboard */,
+				81AE12FC27186E90005F176A /* Assets.xcassets */,
+				81AE12FE27186E90005F176A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8165ACB52722F31A00109B36 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				81AE130127186E90005F176A /* Info.plist */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		8165ACB92722FAA700109B36 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				81AE12F627186E8F005F176A /* ViewController.h */,
+				81AE12F727186E8F005F176A /* ViewController.m */,
+				8165ACBA2722FD7A00109B36 /* MLTestVC.h */,
+				8165ACBB2722FD7A00109B36 /* MLTestVC.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		81AE12E427186E8F005F176A = {
@@ -151,19 +230,11 @@
 		81AE12EF27186E8F005F176A /* DebugTools */ = {
 			isa = PBXGroup;
 			children = (
-				81AE13292718716A005F176A /* FPSLabel */,
-				81AE132527186F99005F176A /* DeviceUtils */,
-				81AE12F027186E8F005F176A /* AppDelegate.h */,
-				81AE12F127186E8F005F176A /* AppDelegate.m */,
-				81AE12F327186E8F005F176A /* SceneDelegate.h */,
-				81AE12F427186E8F005F176A /* SceneDelegate.m */,
-				81AE12F627186E8F005F176A /* ViewController.h */,
-				81AE12F727186E8F005F176A /* ViewController.m */,
-				81AE12F927186E8F005F176A /* Main.storyboard */,
-				81AE12FC27186E90005F176A /* Assets.xcassets */,
-				81AE12FE27186E90005F176A /* LaunchScreen.storyboard */,
-				81AE130127186E90005F176A /* Info.plist */,
-				81AE130227186E90005F176A /* main.m */,
+				8165ACAE2722F0C800109B36 /* App */,
+				8165ACA92722F06A00109B36 /* DebugTool */,
+				8165ACB92722FAA700109B36 /* Main */,
+				8165ACB52722F31A00109B36 /* Info */,
+				8165ACB32722F2E800109B36 /* Resources */,
 			);
 			path = DebugTools;
 			sourceTree = "<group>";
@@ -183,15 +254,6 @@
 				81AE131827186E91005F176A /* DebugToolsUITestsLaunchTests.m */,
 			);
 			path = DebugToolsUITests;
-			sourceTree = "<group>";
-		};
-		81AE132527186F99005F176A /* DeviceUtils */ = {
-			isa = PBXGroup;
-			children = (
-				81AE132627187008005F176A /* DeviceUtils.h */,
-				81AE132727187008005F176A /* DeviceUtils.m */,
-			);
-			path = DeviceUtils;
 			sourceTree = "<group>";
 		};
 		81AE13292718716A005F176A /* FPSLabel */ = {
@@ -408,9 +470,12 @@
 				81AE12F827186E8F005F176A /* ViewController.m in Sources */,
 				81AE132827187008005F176A /* DeviceUtils.m in Sources */,
 				81AE12F227186E8F005F176A /* AppDelegate.m in Sources */,
+				8165ACBC2722FD7A00109B36 /* MLTestVC.m in Sources */,
 				81AE130327186E90005F176A /* main.m in Sources */,
+				8165ACB82722F34700109B36 /* DebugTool.m in Sources */,
 				81AE132F271876A2005F176A /* FPSLabel.m in Sources */,
-				81AE12F527186E8F005F176A /* SceneDelegate.m in Sources */,
+				8165ACB22722F28200109B36 /* DTWindow.m in Sources */,
+				8165ACAD2722F0BB00109B36 /* NSObject+MLWhiteList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -570,7 +635,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -593,6 +658,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,6 +686,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
