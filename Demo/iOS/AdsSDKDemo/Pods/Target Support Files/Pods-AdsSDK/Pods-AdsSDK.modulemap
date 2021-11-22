@@ -1,0 +1,6 @@
+framework module Pods_AdsSDK {
+  umbrella header "Pods-AdsSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
