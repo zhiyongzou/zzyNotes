@@ -11,6 +11,8 @@
 		4F43508B542C915FB6F7DECB /* libPods-DebugTools-DebugToolsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6148EFBF1C261D7385515079 /* libPods-DebugTools-DebugToolsUITests.a */; };
 		814FBD8B274BF2EF00493CC3 /* NSObject+LeakTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 814FBD8A274BF2EF00493CC3 /* NSObject+LeakTracking.m */; };
 		814FBD91274BF44400493CC3 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 814FBD8F274BF44400493CC3 /* JRSwizzle.m */; };
+		8159009F276645D200F23262 /* code_analyze.py in Resources */ = {isa = PBXBuildFile; fileRef = 8159009E276645D200F23262 /* code_analyze.py */; };
+		815900A12766488100F23262 /* property_analyze.py in Resources */ = {isa = PBXBuildFile; fileRef = 815900A02766488100F23262 /* property_analyze.py */; };
 		8165ACAD2722F0BB00109B36 /* NSObject+MLWhiteList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8165ACAC2722F0BB00109B36 /* NSObject+MLWhiteList.m */; };
 		8165ACB22722F28200109B36 /* DTWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8165ACB12722F28200109B36 /* DTWindow.m */; };
 		8165ACB82722F34700109B36 /* DebugTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8165ACB72722F34700109B36 /* DebugTool.m */; };
@@ -55,6 +57,8 @@
 		814FBD8A274BF2EF00493CC3 /* NSObject+LeakTracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LeakTracking.m"; sourceTree = "<group>"; };
 		814FBD8D274BF44400493CC3 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		814FBD8F274BF44400493CC3 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		8159009E276645D200F23262 /* code_analyze.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = code_analyze.py; sourceTree = "<group>"; };
+		815900A02766488100F23262 /* property_analyze.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = property_analyze.py; sourceTree = "<group>"; };
 		8165ACAB2722F0BB00109B36 /* NSObject+MLWhiteList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MLWhiteList.h"; sourceTree = "<group>"; };
 		8165ACAC2722F0BB00109B36 /* NSObject+MLWhiteList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MLWhiteList.m"; sourceTree = "<group>"; };
 		8165ACB02722F28200109B36 /* DTWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTWindow.h; sourceTree = "<group>"; };
@@ -158,6 +162,15 @@
 			path = JRSwizzle;
 			sourceTree = "<group>";
 		};
+		8159009D276645D200F23262 /* CodeAnalyze */ = {
+			isa = PBXGroup;
+			children = (
+				8159009E276645D200F23262 /* code_analyze.py */,
+				815900A02766488100F23262 /* property_analyze.py */,
+			);
+			path = CodeAnalyze;
+			sourceTree = "<group>";
+		};
 		8165ACA92722F06A00109B36 /* DebugTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +247,7 @@
 		81AE12E427186E8F005F176A = {
 			isa = PBXGroup;
 			children = (
+				8159009D276645D200F23262 /* CodeAnalyze */,
 				81AE12EF27186E8F005F176A /* DebugTools */,
 				81AE130B27186E91005F176A /* DebugToolsTests */,
 				81AE131527186E91005F176A /* DebugToolsUITests */,
@@ -298,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81AE131C27186E91005F176A /* Build configuration list for PBXNativeTarget "DebugTools" */;
 			buildPhases = (
+				815900992766215500F23262 /* Code Analyze Script */,
 				D1C25437C99FE4FCB579EC7B /* [CP] Check Pods Manifest.lock */,
 				81AE12E927186E8F005F176A /* Sources */,
 				81AE12EA27186E8F005F176A /* Frameworks */,
@@ -397,8 +412,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8159009F276645D200F23262 /* code_analyze.py in Resources */,
 				81AE130027186E90005F176A /* LaunchScreen.storyboard in Resources */,
 				81AE12FD27186E90005F176A /* Assets.xcassets in Resources */,
+				815900A12766488100F23262 /* property_analyze.py in Resources */,
 				81AE12FB27186E8F005F176A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +480,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		815900992766215500F23262 /* Code Analyze Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Code Analyze Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nresult=$(python \"${PROJECT_DIR}/CodeAnalyze/code_analyze.py\")\nif [ -n \"${result}\" ] ; then\n    echo \"error: \" >&2\n    echo \"${result}\"\n    exit 1\nfi\n";
 		};
 		D1C25437C99FE4FCB579EC7B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
