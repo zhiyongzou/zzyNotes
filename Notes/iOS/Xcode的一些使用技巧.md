@@ -1,5 +1,8 @@
 ## Xcode的一些使用技巧
 
+##### 方法注释快捷键
+> option + command + /
+
 ##### 快速查找文件位置
 > shift + command + o
 
