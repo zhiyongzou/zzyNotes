@@ -26,12 +26,20 @@
 #import "SVGATestVC.h"
 #import "NSStringVC.h"
 #import "CategoryTestVC.h"
+#import "LocationBlockViewController.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *locationb = [VCModel new];
+    locationb.title = @"Location Block";
+    locationb.targetVC = ^UIViewController * _Nonnull{
+        return [LocationBlockViewController new];
+    };
+    [list addObject:locationb];
     
     VCModel *category = [VCModel new];
     category.title = @"Category Test";
