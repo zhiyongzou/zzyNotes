@@ -15,6 +15,7 @@
 		812AEBE4269844F700ADBECD /* KVOTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812AEBE2269844F700ADBECD /* KVOTestVC.xib */; };
 		812E3AF12945812400C0CEEF /* CTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812E3AF02945812400C0CEEF /* CTBaseViewController.m */; };
 		812E3AF52945829700C0CEEF /* LocationBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812E3AF42945829700C0CEEF /* LocationBlockViewController.m */; };
+		812E3AF92948C48200C0CEEF /* DicWriteErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812E3AF82948C48200C0CEEF /* DicWriteErrorViewController.m */; };
 		8142DB2B26EE033F0000DC1C /* CTOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142DB2A26EE033F0000DC1C /* CTOperation.m */; };
 		8142DB3526EE04B00000DC1C /* GCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142DB3326EE04B00000DC1C /* GCDTestVC.m */; };
 		8142DB3626EE04B00000DC1C /* GCDTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8142DB3426EE04B00000DC1C /* GCDTestVC.xib */; };
@@ -30,7 +31,6 @@
 		815C80822676FBD5002741DD /* BlurEffectTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 815C80802676FBD5002741DD /* BlurEffectTestVC.m */; };
 		815C80832676FBD5002741DD /* BlurEffectTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815C80812676FBD5002741DD /* BlurEffectTestVC.xib */; };
 		816696312601E48E0045B6F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 816696302601E48E0045B6F1 /* AppDelegate.m */; };
-		816696342601E48E0045B6F1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 816696332601E48E0045B6F1 /* SceneDelegate.m */; };
 		816696372601E48E0045B6F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816696362601E48E0045B6F1 /* ViewController.m */; };
 		8166963A2601E48E0045B6F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816696382601E48E0045B6F1 /* Main.storyboard */; };
 		8166963C2601E4900045B6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8166963B2601E4900045B6F1 /* Assets.xcassets */; };
@@ -106,6 +106,8 @@
 		812E3AF02945812400C0CEEF /* CTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTBaseViewController.m; sourceTree = "<group>"; };
 		812E3AF32945829700C0CEEF /* LocationBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationBlockViewController.h; sourceTree = "<group>"; };
 		812E3AF42945829700C0CEEF /* LocationBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationBlockViewController.m; sourceTree = "<group>"; };
+		812E3AF72948C48200C0CEEF /* DicWriteErrorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DicWriteErrorViewController.h; sourceTree = "<group>"; };
+		812E3AF82948C48200C0CEEF /* DicWriteErrorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DicWriteErrorViewController.m; sourceTree = "<group>"; };
 		8142DB2926EE033F0000DC1C /* CTOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTOperation.h; sourceTree = "<group>"; };
 		8142DB2A26EE033F0000DC1C /* CTOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTOperation.m; sourceTree = "<group>"; };
 		8142DB3226EE04B00000DC1C /* GCDTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestVC.h; sourceTree = "<group>"; };
@@ -131,8 +133,6 @@
 		8166962C2601E48E0045B6F1 /* CommonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8166962F2601E48E0045B6F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		816696302601E48E0045B6F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		816696322601E48E0045B6F1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		816696332601E48E0045B6F1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		816696352601E48E0045B6F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		816696362601E48E0045B6F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		816696392601E48E0045B6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -252,6 +252,15 @@
 			path = LocationBlock;
 			sourceTree = "<group>";
 		};
+		812E3AF62948C45F00C0CEEF /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				812E3AF72948C48200C0CEEF /* DicWriteErrorViewController.h */,
+				812E3AF82948C48200C0CEEF /* DicWriteErrorViewController.m */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
 		8142DB2826EE030D0000DC1C /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +344,7 @@
 		816696C22601F5F00045B6F1 /* TestVcs */ = {
 			isa = PBXGroup;
 			children = (
+				812E3AF62948C45F00C0CEEF /* Dictionary */,
 				812E3AF22945825A00C0CEEF /* LocationBlock */,
 				81088BA526FC68B3009E8747 /* Category */,
 				8142DB2826EE030D0000DC1C /* GCD */,
@@ -361,8 +371,6 @@
 				816696412601E4900045B6F1 /* main.m */,
 				8166962F2601E48E0045B6F1 /* AppDelegate.h */,
 				816696302601E48E0045B6F1 /* AppDelegate.m */,
-				816696322601E48E0045B6F1 /* SceneDelegate.h */,
-				816696332601E48E0045B6F1 /* SceneDelegate.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -698,8 +706,8 @@
 				817B16FA269B32590025F18C /* NSStringVC.m in Sources */,
 				819B09F226D49AD90009B7A7 /* SVGATestVC.m in Sources */,
 				815162CB2634546F004F0DD7 /* StringToIntTest.m in Sources */,
+				812E3AF92948C48200C0CEEF /* DicWriteErrorViewController.m in Sources */,
 				81D3805626134B98001CBFC6 /* AtomicTestVC.m in Sources */,
-				816696342601E48E0045B6F1 /* SceneDelegate.m in Sources */,
 				812E3AF52945829700C0CEEF /* LocationBlockViewController.m in Sources */,
 				812AEBE3269844F700ADBECD /* KVOTestVC.m in Sources */,
 				816696C52601F6250045B6F1 /* LayoutFeedbackLoopsVC.m in Sources */,
@@ -810,7 +818,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -863,7 +871,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -880,7 +888,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F24R2G835;
 				INFOPLIST_FILE = CommonTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -901,7 +909,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F24R2G835;
 				INFOPLIST_FILE = CommonTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

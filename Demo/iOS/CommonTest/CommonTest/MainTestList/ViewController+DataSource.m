@@ -27,12 +27,20 @@
 #import "NSStringVC.h"
 #import "CategoryTestVC.h"
 #import "LocationBlockViewController.h"
+#import "DicWriteErrorViewController.h"
 
 @implementation ViewController (DataSource)
 
 - (void)setupTestList {
     
     NSMutableArray *list = [NSMutableArray array];
+    
+    VCModel *dicNull = [VCModel new];
+    dicNull.title = @"Dic Null Write Error";
+    dicNull.targetVC = ^UIViewController * _Nonnull{
+        return [DicWriteErrorViewController new];
+    };
+    [list addObject:dicNull];
     
     VCModel *locationb = [VCModel new];
     locationb.title = @"Location Block";
