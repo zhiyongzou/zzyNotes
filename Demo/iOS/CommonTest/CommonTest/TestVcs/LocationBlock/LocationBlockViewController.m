@@ -8,7 +8,7 @@
 #import "LocationBlockViewController.h"
 #import <CoreLocation/CoreLocation.h>
 
-@interface LocationBlockViewController ()
+@interface LocationBlockViewController () <CLLocationManagerDelegate>
 
 @end
 
@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self locationCoordinate];
+    CLLocationCoordinate2D c2d = [self locationCoordinate];
+    NSLog(@"locationCoordinate: %@ %@", @(c2d.latitude), @(c2d.longitude));
 }
 
 - (CLLocationCoordinate2D)locationCoordinateBlock {
@@ -50,8 +51,6 @@
         });
     }
     
-    CLLocationDegrees latitude = 0;
-    CLLocationDegrees longitude = 0;
     BOOL locationEnable = NO;
     if (@available(iOS 14.0, *)) {
         if (kCLAuthorizationStatusAuthorizedWhenInUse == locationManager.authorizationStatus ||
@@ -64,7 +63,41 @@
         }
     }
     
-    return CLLocationCoordinate2DMake(latitude, longitude);
+    if (locationEnable) {
+        return locationManager.location.coordinate;
+    } else {
+        return CLLocationCoordinate2DMake(0, 0);
+    }
+}
+
+- (CLLocationCoordinate2D)locationCoordinate2 {
+    static CLLocationManager *locationManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        locationManager = [CLLocationManager new];
+        locationManager.delegate = self;
+    });
+    
+    return locationManager.location.coordinate;
+}
+
+- (CLLocationCoordinate2D)locationCoordinate3 {
+    static CLLocationManager *locationManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            locationManager = [CLLocationManager new];
+            locationManager.delegate = self;
+        });
+    });
+    
+    return locationManager.location.coordinate;
+}
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager *)manager {
+    NSLog(@"%s", __func__);
 }
 
 @end
