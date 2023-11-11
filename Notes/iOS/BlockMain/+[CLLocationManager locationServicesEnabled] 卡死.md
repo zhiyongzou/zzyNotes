@@ -103,9 +103,11 @@ Thread 0:
 11  CoreLocation                        0x00000001b003b07e CLClientStopVehicleHeadingUpdates + 105350
 ```
 
-其实一开始的考虑就是为了可以在未授权的情况下节省`CLLocationManager`对象的开销，但是使用`authorizationStatus`方式判断权限依然会卡死。如果还是要在主线程获取地理位的话，就不能进行位置权限，虽然直接创建会导致一些性能开销，但是对于 UI 卡死来说，这点开销可忽略不计。
+其实一开始的考虑就是为了可以在未授权的情况下节省`CLLocationManager`对象创建的开销，但是在主线程使用`authorizationStatus`方式判断权限依然会卡死。
 
 ### 最终方案
+不判断地理位置授权状态，直接创建`CLLocationManager`，虽然直接创建会导致一些不必要的开销，但是对于 UI 卡死来说，这点开销可忽略不计。
+
 
 ```objc
 - (CLLocationCoordinate2D)locationCoordinate {
