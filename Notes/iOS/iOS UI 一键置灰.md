@@ -70,14 +70,6 @@
     }
 }
 
-- (nullable UIView *)gm_garyMaskView {
-    return objc_getAssociatedObject(self, _cmd);
-}
-
-- (void)gm_setGrayMaskView:(UIView *)view {
-    objc_setAssociatedObject(self, @selector(gm_garyMaskView), view, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
 ```
 
 ### 结论
