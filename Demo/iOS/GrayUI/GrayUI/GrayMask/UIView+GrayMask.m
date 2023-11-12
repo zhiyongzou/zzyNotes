@@ -15,11 +15,9 @@
 - (void)gm_setGrayMask:(BOOL)hasMask {
     if (hasMask) {
         @try {
-            NSString *cls = [NSString stringWithFormat:@"%@%@", @"CA", @"Filter"];
-            NSString *name = [NSString stringWithFormat:@"%@%@", @"color", @"Saturate"];
-            CIFilter *gray = [NSClassFromString(cls) filterWithName:name];
-            NSString *value = [NSString stringWithFormat:@"%@%@", @"input", @"Amount"];
-            [gray setValue:@0 forKey:value];
+            NSString *cls = [@"CA" stringByAppendingString:@"Filter"];
+            CIFilter *gray = [NSClassFromString(cls) filterWithName:@"colorSaturate"];
+            [gray setValue:@0 forKey:@"inputAmount"];
             self.layer.filters = @[gray];
         } @catch (NSException *exception) { }
     } else {
